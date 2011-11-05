@@ -2,12 +2,13 @@
 layout: default
 ---
 
-  <article about="{{ page.url }}" class="hentry">
+  <article about="{{ site.url }}{{ page.url }}" class="hentry">
+    <h1 property="dc:title">{{ page.title }}</h1> 
     {{ content }}
     <footer>
-      <span property="dc:title">{{ page.title }}</span> publié le 
+      Publié le 
       <data property="dc:created published">{{ page.date | date: "%d %b %Y" }}</data> par 
       <span class="author" property="dc:contributor">{% include author.html %}</span> / 
-      <span property="dc:identifier"><a href="{{ page.url }}" rel="bookmark">lien permanent</a></span>
+      <span property="dc:identifier"><a href="{{ site.url }}{{ page.url }}" rel="bookmark">lien permanent</a></span>
     </footer>
   </article>

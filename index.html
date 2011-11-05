@@ -2,17 +2,15 @@
 layout: default
 ---
 
-{% for post in site.posts limit:6 %}
-  <article about="{{ post.url }}" class="hentry">
-    <h2><a href="{{ post.url }}" property="dc:title">{{ post.title }}</a></h2>
-    <p class="author" property="dc:contributor">{% include author.html %}</p>
-    <p class="entry-summary"
-    {{ post.content | truncatewords: 35 }}
-
+{% for post in site.posts limit:42 %}
+  <article about="{{ site.url }}{{ post.url }}" class="hentry">
+    <h2><a href="{{ site.url }}{{ post.url }}" property="dc:title">{{ post.title }}</a></h2>
+    <p class="entry-summary">
+    {{ post.content }}
+    </p>
     <aside class="seemore">
-      <data property="dc:created published">{{ post.date | date: "%d %b %Y" }}</data>, {{ post.categories | category_links }} |
-
-      <a href="{{ post.url }}">Lire la suite </a>
+      <a href="{{ site.url }}{{ post.url }}">Lire la note </a>
+      — publié le <data property="dc:created published">{{ post.date | date: "%d %b %Y" }}</data>, 
     </aside>
 </article>
 
