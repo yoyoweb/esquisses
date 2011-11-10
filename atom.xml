@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link type="text/html" href="http://{{ site.baseurl }}/"/>
+  <link type="application/atom+xml" rel="self" href="http://{{ site.baseurl }}/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <title>Esquisses…</title>
+  <subtitle>Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté.</subtitle>
+  <id>http://{{ site.baseurl }}/</id>
+  <author>
+    <name>clochix</name>
+  </author>
+  <rights>Esquisses de Clochix est mis à disposition selon les termes de la licence Creative Commons Paternité - Partage à l'Identique 3.0 non transcrit.</rights>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://{{ site.baseurl }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://{{ site.baseurl }}{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Clochix</name>
+      <uri>http://clochix.net</uri>
+    </author>
+    <content type="html">{{ post.content | html_espace | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>

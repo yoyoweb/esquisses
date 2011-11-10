@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Esquisses…</title>
+    <link>http://{{ site.baseurl }}/</link>
+    <atom:link href="http://{{ site.baseurl }}/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté.</description>
+    <language>fr-FR</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S +0200" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S +0200" }}</lastBuildDate>
+
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>http://{{ site.baseurl }}{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S +0200" }}</pubDate>
+      <author>Clochix</author>
+      <guid>http://{{ site.baseurl }}{{ post.id }}</guid>
+      <description>{{ post.content | html_escape | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
