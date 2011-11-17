@@ -1,0 +1,6 @@
+---
+  layout: post
+  title: Instant de vérité
+---
+
+La page vierge c'est l'instant de vérité. C'est face à elle que l'on va enfin savoir si l'on a du talent. Écrire un roman, une symphonie ou un logiciel qui sera l'étendard que l'on soumettra au regard des Zotres pour être jugés. Pour savoir. A-t-on un minimum de talent&nbsp;? Vaut-on quelque chose&nbsp;? Alors face à la page vierge, on hésite, on tergiverse. On sort tout le contenu de sa trousse et on décide qu'on travaillera bien mieux si tous ses crayons sont bien taillés, alors on les taille, puis on les aligne, optimisons l'outil. On se dit qu'on n'a pas encore acquis toutes les compétences nécessaire et on file réouvrir un livre, lire un article. On se dit soudain que ça serait bien mieux si… et on ouvre la documentation du logiciel, on cherche comment faire dans notre éditeur pour que… Ah, et puis ça serait plus beau si, alors cherchons… On retarde. Au fond, a-t-on vraiment envie de savoir&nbsp;? L'incertitude qui contient en elle le pire mais aussi le meilleur ne vaut-elle pas mieux que la certitude du pire&nbsp;? Dès que je maîtriserai un peu mieux Vim et Jekyll, que j'y aurai un peu réfléchit, ah, que j'aurai lu mes mails, fait du ménage sur mon disque, appris à taper avec plus de deux doigts, oui, dès que je serai près, j'écrirai un billet sur le sujet.
