@@ -1,0 +1,111 @@
+---
+  layout: post
+  title: "Mozilla en 2012: bâtir une génération de créateurs Web"
+  published: true
+  tags:
+  - Mozilla
+  - Drumbeat
+---
+
+Voici une rapide traduction d'un billet de Mark Surman sur les [objectifs de Mozilla et de Drumbeat pour 2012][post]. Mark est un des dirigeants de la Fondation Mozilla et s'occupe plus particulièrement de **Drumbeat**, l'incubateur à projets visant à promouvoir les valeurs de Mozilla et du Web Libre au delà des cercles technophiles. Mark a mené une réflexion ces derniers mois sur l'avenir de Drumbeat et ses prochains objectifs. Il a publié une longue série de billets, qu'avec mes camarades de *#frenchmoz* nous avions [commencé à traduire][webmakersfr]. Ils aident à comprendre le cheminement qui conduit Mozilla à s'intéresser de plus en plus à l'éducation et à la création[^pub].
+
+Dans ces billets, Mark arrivait à deux conclusions&nbsp;:
+* Mozilla devrait éduquer les internautes aux technologies du Web et à sa culture —&nbsp;il parle de *Web literacy*&nbsp;—, pour que, comprenant mieux l'outil, ils puissent se l'approprier au lieu d'en être juste utilisateurs;
+* Mozilla devrait travailler davantage avec ceux qu'il appelle les **Web Makers**, c'est à dire tous les gens qui créent avec et pour le Web;
+
+De ces réflexions sont nées les **objectifs de la Fondation Mozilla pour 2012&nbsp;**:
+
+## Les plans de Mozilla pour 2012
+
+> Créer une génération de créateurs du Web a été un gros sujet de discussion ces derniers temps. Ça a été le thème du récent Festival Mozilla. Et le sujet d'une discussion sur ce carnet. Amener les gens qui utilisent le Web à le créer est devenu l'un des principaux centres d'intérêt de Mozilla.
+
+> Au dernier conseil d'administration de la Fondation Mozilla, nous avons approfondi cette question&nbsp;: que pouvons nous faire de concret en 2012 pour nous attaquer de front à nos buts majeurs concernant les créateurs Web&nbsp;? J'ai rassemblé la présentation faite au conseil et un résumé de nos plans en cours d'élaboration. Vous pouvez télécharger la [présentation][pdf] ou la [vidéo][video]. Elles présentent une première version des projets de la Fondation Mozilla en 2012. Au cours des prochaines semaines, nous allons les détailler davantage et récolter les idées des gens qui veulent s'investir.
+
+> La vidéo fait 30 minutes, si vous n'avez pas le temps de la regarder, voici un résumé des points principaux&nbsp;:
+> * ce qui avait commencé comme Mozilla Drumbeat a évolué en une série de «&nbsp;laboratoires d'apprentissage&nbsp;» pour les créateurs Web&nbsp;: un mélange de programme d'apprentissage et de logiciels pour les gens qui créent des choses sur le Web;
+> * en 2012 nous projetons de faire grandir la communauté et la portée de ceux de ces laboratoires qui ont eu le plus de succès&nbsp;: Popcorn pour la vidéo, MoJo pour le journalisme et Hive[^hive] pour les adolescents;
+> * nous prévoyons également de renforcer nos meilleurs logiciel et programmes d'apprentissage, comme PopcornMaker, Hackasaurus et School of Webcraft. Nous les intégrerons dans tous nos laboratoires d'apprentissage;
+> * un nouvel effort en 2012 sera de développer les badges de culture Web Mozilla[^pub2], c'est à dire un moyen d'être reconnu pour les connaissances que l'on a acquises dans un des laboratoires et pour son implication dans la communauté;
+> * afin que tout cela réussisse, Mozilla a besoin de devenir meilleur dans la création de logiciels qui répondent aux besoins des créateurs du Web, et également de se renforcer dans le domaine de l'éducation. Nous avons déjà des gens doués dans ces deux domaines, mais il nous en faut plus[^jobs];
+
+> Ces projets sont issus d'une réunion des directeurs de programme de la Fondation Mozilla qui s'est tenue cet été et des retours sur les billets que j'ai postés récemment.
+
+> Bien que la conversation dure à présent depuis de nombreux mois, ces projets ne sont encore que des esquisses. Ils sont conçus pour évoluer à mesure que nous entrerons dans les détails et que nous commencerons à travailler dessus au cours des prochaines semaines.
+
+> Si vous avez des idées et voulez participer, le meilleur moyen est de rejoindre la conférence téléphonique des créateurs Web tous les mardi. N'hésitez pas non plus à poster des commentaires sur mon blog.
+
+[^pub]: NDT&nbsp;: &lt;réclame&gt;j'avais déjà publié un [billet sur le sujet][apprendre] dans mon carnet&lt;/réclame&gt;
+[^pub2]: NDT&nbsp;: &lt;réclame&gt;j'ai également déjà évoqué ce [mécanisme de badges][badges]&lt;/réclame&gt;
+[^hive]: NDT&nbsp;: le [The Hive Learning Network NYC][hive] (la Ruche pour l'apprentissage) est une coordination de nombreux partenaires dont Mozilla, des bibliothèques, des musées, etc. Elle vise à promouvoir les projets numériques collaboratifs qui créent des opportunités d'apprentissage pour les jeunes. Mozilla est [gérant de cette coordination][hive2];
+[^jobs]: pour les mal-comprenants&nbsp; la Fondation va encore beaucoup recruter dans les prochains mois #jobsdereve&nbsp;;
+
+[webmakersfr]: https://etherpad.mozilla.org/webmakersfr
+[post]: http://commonspace.wordpress.com/2011/11/22/mozilla-2012-plan/
+[pdf]: http://commonspace.files.wordpress.com/2011/11/mofo-2012-blog-version2.pdf
+[video]: http://dl.dropbox.com/u/877257/2012%20Moz%20Strategy%20Deck.webmvp8.webm
+[apprendre]: http://www.clochix.net/post/2011/10/12/Apprendre-le-Web
+[badges]: http://www.clochix.net/post/2011/08/11/OBI,-quand-Mozilla-vous-donne-le-contr%C3%B4le-sur-vos-badges
+[hive]: http://explorecreateshare.org/
+[hive2]: http://blog.mozilla.com/blog/2011/10/18/hive-nyc-joins-mozilla/
+
+Ainsi s'achève le billet de Mark. Je n'ai pas regardé le *slidecast*, mais vais tenter un résumé de ce que j'ai compris de la présentation qui l'accompagne.
+
+## En détail
+
+* le but de Mozilla est d'amener des dizaines de millions de personnes à ne plus seulement utiliser le Web, mais aussi à le créer;
+* pour cela, il faut d'abord qu'ils comprennent son fonctionnement, afin de pouvoir créer puis innover;
+* on peut atteindre ce but en créant des cours et des logiciels pour les créateurs Web qui à la fois les enthousiasment et leur ouvrent des possibilités nouvelles;
+* en 2012, Drumbeat va muter pour se concentrer sur l'éducation, avec trois lignes directrices &nbsp;: des laboratoires d'apprentissage pour les créateurs Web, un système de badges et le renforcement de Popcorn, MoJo et Hive;
+
+### Les laboratoires d'apprentissage
+
+* Drumbeat a commencé comme une série d'expérimentations ouvertes pour réfléchir à ce que pouvait faire Mozilla pour aller au delà de Firefox. Plus de 50.000 personnes se sont déjà investies dans ces expérimentations. La plupart n'étaient pas investies dans Mozilla auparavant, et viennent de nouveaux horizons&nbsp;: réalisateurs de films, artistes, scientifiques, adolescents, journalistes, etc. Nous les avons mis en relation avec nos développeurs;
+* *le rôle de Mozilla est d'amener les gens, d'un rôle de consommateurs, à devenir des créateurs*, a déclaré à plusieurs reprises Mitchell Baker. À devenir des créateurs de Web, des gens qui font, bricolent et s'expriment en utilisant les briques libres qui constituent le Web;
+* les expérimentations de Drumbeat ont permis de constater que c'est lorsqu'ont été réunis des logiciels, de l'apprentissage et des créateurs Web que les meilleurs résultats ont été obtenus. Les projets les plus réussis ont progressivement évolués pour devenir des laboratoires d'apprentissage pour les créateurs Web;
+* Drumbeat a cherché à faire travailler ensemble des créateurs Web d'horizons variés. Popcorn.js par exemple a été développé par un réalisateur de films, deux ingénieurs, un professeur, un activiste des médias, 30 élèves ingénieur et 15 adolescents vidéastes de San Francisco. Ce sont ces types de rencontres entre des communautés qui ont donné les meilleurs projets;
+* ils ont commencé par créer des logiciels, mais ont fini par faire quelque chose de bien plus grand. Par exemple, la première étape a été de créer la bibliothèque `popcorn.js`. Puis est venue la phase d'apprentissage avec un cours sur la réalisation de film. Et le résultat est un produit hybride, l'application *Popcorn Maker* qui permet d'apprendre en créant et vice-versa. Popcorn est ainsi devenu au fil du temps un projet combinant logiciel et apprentissage;
+* Popcorn n'a pas été qu'un exercice déconnecté de la réalité. 18 mois après son lancement, il fonctionne et commence à être réellement utilisé, à avoir une influence sur la façon dont les gens utilisent la vidéo sur le Web. Popcorn a un vrai impact sur l'évolution du Web;
+* les meilleurs projets fonctionnent tous comme des laboratoires d'apprentissage, mélangeant la réalisation de logiciels, l'apprentissage et les rencontres entre créateurs Web;
+* il faut rester concentré sur ce qui a fonctionné en 2012&nbsp;: s'intéresser aux créateurs Web (via Popcorn, MoJo et Hive), investir dans le développement de logiciels comme popcorn et bâtir de solides laboratoires d'apprentissage autour de tout cela;
+
+### Les badges
+
+* Les badges sont le carburant de la fusée, une incitation et un moyen de se concentrer sur les compétences nécessaires;
+* Mozilla sait y faire en *apprentissage en mode connecté*, (je n'ai pas tout compris à la page 20);
+* l'apprentissage en utilisant les centres d'intérêt est important pour Mozilla (par exemple utiliser l'intérêt de jeunes pour la vidéo pour leur faire apprendre HTML);
+* par contre nous ne savons pas identifier les compétences importantes pour les créateurs Web, les buts que la formation doit atteindre. S'agit-il d'enseigner que le Web est bidouillable, ou faut-il aller jusqu'au développement d'une application Web complète&nbsp;?
+* les badges peuvent servir à identifier les compétences importantes. Quel que soit son profil, il est des connaissances et des pratiques qu'il est nécessaire de posséder pour créer sur le Web;
+* définir un ensemble clair de badges correspondant à l'abécédaire du Web permet ensuite de développer des laboratoires d'apprentissage pour acquérir ces connaissances;
+* les badges devraient donc faire partie des priorités de 2012: créer le référentiel des badges de compétences de Mozilla, le tester avec les projets existants, et créer un logiciel de gestion de ces badges;
+
+### La stratégie 2012
+
+* renforcer Popcorn, MoJo et Hive; aiguiser les laboratoires d'apprentissage; créer un système de badges;
+* pour aider les gens à devenir des créateurs Web, il fait développer des offres pour des publics ciblés, incluant du logiciel, de l'apprentissage et des créateurs Web. Créer de telles offres autour de chacun des projets est la priorité globale pour 2012;
+* plus concrètement&nbsp;:
+  * sortir les version 1.0 de Popcorn Maker[^pcm] et X-Ray Goggles[^xrg];
+  * développer les cours autour de Popcorn et les mettre en ligne;
+  * développer le laboratoire d'apprentissage de MoJo, en y incluant des cours d'initiation à la programmation, en partenariat avec la P2PU;
+  * faire évoluer Hackasaurus pour qu'il propose des introductions aux compétences du Web pour tous les âges, avec éventuellement la création d'un programme complet de cours permettant à un novice de devenir créateur Web;
+  * développer Hive à New york et si possible dans d'autres villes;
+  * créer des badges de compétences Web pour les principales compétences, et les intégrer dans tous les projets;
+  * développer une plate-forme logicielle de gestion des badges;
+  * organiser des évènements locaux&nbsp;: ces rencontres (réunions, festivals, etc) doivent faire partie intégrante de chacun des projets;
+  * créer des sites Web et des canaux de diffusion pour chacun de ces points. Tout le monde doit pouvoir facilement participer en ligne aux projets;
+* les trois premiers publics ciblés sont ceux avec lesquels Mozilla a déjà commencé à tisser des liens&nbsp;: les vidéastes, les journalistes et les adolescents. Mais ce n'est que le début, le but est que la plate-forme accueille à terme de centaines de communautés de créateurs Web;
+* chaque laboratoire d'apprentissage sera composé de deux équipes, l'une chargée de développer les outils logiciels, l'autre les programmes d'apprentissage;
+
+### Conclusion
+
+* les trois principaux buts de 2012 sont&nbsp;
+  * **créer des laboratoires d'apprentissage pour la vidéo, le journalisme et les adolescents**. Ce seront des versions étendues des projets Popcorn, MoJo et Hive;
+  * **être rigoureux en matière d'apprentissage, et déterminer les compétences qui comptent**, en se concentrant sur les badges liés à la culture Web, à partir du travail commencé par Hackasaurus;
+  * **développer la participation, à la fois en ligne et localement**;
+
+[^pcm]: un outil permettant d'utiliser facilement popcorn sans mettre les mains dans le code;
+[^xrg]: les lunettes à rayons X est un [petit logiciel][xrg] développé dans le cadre de *Hackasaurus* qui permet de découvrir de manière ludique la structure des pages Web et de les bidouiller;
+[xrg]: http://hackasaurus.org/en-US/goggles/
+
+## Conclusion personnelle
+
+I ♥♥♥ cette fondation&nbsp;!!! Et suis tout excité de voir ce programme se concrétiser.
