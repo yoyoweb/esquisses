@@ -1,0 +1,28 @@
+---
+  layout: post
+  title: Handicap
+  tags:
+    - "36 15 Ma Vie"
+    - Mozilla
+    - a11y
+---
+
+On comprend beaucoup mieux les choses une fois les avoir ressenties dans sa chair. 
+
+Aujourd'hui, c'est l'exclusion liée au handicap que je réalise un peu mieux, pour en faire l'expérience. Certes mon handicap n'est pas très grave, et surtout curable. Certes, l'exclusion est anecdotique. Il n'empêche. Ressentir soi-même aide à mieux comprendre l'autre, se mettre à sa place et peut-être penser davantage à lui dans ce que je fais.
+
+Je m'intéresse depuis longtemps à la liberté en ligne[^digression]. Tant du point de vue des règles que des outils. Les règles, les lois, autorisent ou interdisent. Les outils enferment ou rendent possible. Créer des outils qui rendent possible l'exercice de la liberté est un des buts du Mouvement du Logiciel Libre. Sur le Web, un des plus intéressants représentants de ce mouvement est la Fondation Mozilla. Je la suis depuis longtemps et, en quête de nouvelle noble cause où m'investir, avais décidé il y a un an de me rapprocher de la communauté locale pour voir si je pouvais lui être d'une quelconque utilité. J'avais surmonté ma misanthropie pour rencontrer les Mozilliens du quartier. Mais ma phobie sociale vient de me rattraper.
+
+[^digression]: admirez cette digression pour éviter d'entrer dans le vif du sujet.
+
+Misanthropie, timidité, phobie sociale, je découvre que le [DSM][dsm] reconnaît ces troubles comme de vrais pathologies, constituant des handicaps.
+
+[dsm]: http://fr.wikipedia.org/wiki/Manuel_diagnostique_et_statistique_des_troubles_mentaux
+
+Une des nombreuses conséquences de ce handicap est que j'ai toujours eu beaucoup de mal dans l'apprentissage des langues étrangères. Des langues vivantes du moins, je me suis régalé de latin puisque c'est une langue qui ne demande qu'à être lue, pas à être écrite, encore moins parlée. J'ai toujours eu le plus grand mal à m'exprimer dans une langue étrangère. Si je lis sans trop de problèmes des articles en anglais, il m'est difficile de rédiger un mail dans cette langue, et je suis bien incapable de la comprendre à l'oral, et évidemment de la parler.
+
+Mozilla est un projet à vocation universelle. Pour permettre la communication entre tous les membres du projet, il a besoin d'une langue commune, d'une *lingua franca* comprise et parlée par chacun, chacune, toutes et tous. Cette langue est évidemment l'anglais. Je ne le parle ni ne le comprend, je ne peux donc espérer participer activement à la vie de la communauté. Je m'en étais déjà aperçu à chaque fois qu'un Mozillien non francophone passait par Paris. La frustration de ne pouvoir participer aux conversations, de n'en presque rien comprendre, de rester sur le côté. Mais ce sont le Festival Mozilla de Londres et le Mozcamp de Berlin qui m'ont vraiment fait prendre conscience que je ne pouvais espérer m'investir dans Mozilla sans parler anglais. J'aurais pu aller à ces deux évènements, tous les deux des plus enthousiasmants, mais me suis abstenu car je savais que j'en serais surtout revenu frustré, frustré d'avoir vu de près ce à quoi mon handicap social m'interdit de participer.
+
+Je ne serai jamais Mozillien. Ça ne fait finalement guère de différence. Je n'ai aucune compétence qui puisse être utile à Moz, et très peu de temps libre à consacrer à l'aventure. Heureusement, le fonctionnement de la Fondation est suffisamment ouvert pour que même de l'extérieur je continue à suivre ce qui se passe du côté de Mountain View et puisse à l'occasion faire partager mes coups de cœur ou de gueule. Mon «&nbsp;handicap&nbsp;» ne va donc par changer grand chose à mon implication dans le projet. 
+
+Je sais que tout cela n'est que jérémiades, qu'il suffirait que je me fasse un peu violence pour surmonter ma timidité, pratiquer l'anglais et acquérir les rudiments qui me permettraient de suivre. Oui, je sais, il faudra que j'y réfléchisse demain. En attendant, j'espère que cette expérience m'aura au moins appris quelque chose, fais prendre davantage conscience de ce que signifie être en situation de handicap, d'exclusion. Rêvons un peu, j'espère même que ça me servira dans ma pratique, en m'incitant à essayer de façonner des objets un peu plus accessibles à chacun, quel que soit son handicap.
