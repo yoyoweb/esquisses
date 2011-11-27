@@ -1,0 +1,30 @@
+---
+  layout: post
+  title: "Wladimir Palant : Google Chrome et les applications Web pré-installées"
+  tags:
+  - Google
+  - Chrome
+---
+
+Google Chrome est en passe de devenir aussi populaire que Firefox, du moins si l'on mesure la popularité au nombre d'utilisateurs. Sur le plan technique, bien peu de choses différencient les deux navigateurs. Ils ont chacun leurs points forts et leurs faiblesses, mais sont globalement du même niveau. La philosophie qui anime leurs créateurs est elle bien différente, et a des impacts sur leurs utilisateurs. Wladimir Palant[^Wlad] a ainsi découvert que Chrome installe des extensions et des applications Web sans demander l'avis de l'utilisateur, et peut faire plus. J'ai trouvé son [article][article] particulièrement intéressant et me suis permis de le traduire. Libre à chacun de préférer utiliser Chrome plutôt que Firefox. Mais autant que le choix soit le plus éclairé possible.
+
+[^Wlad]: Wladimir est le développeur d'une des extensions Firefox parmi les plus utiles et les plus utilisées: [Adblock Plus](http://adblockplus.org). Je m'aperçois qu'il n'a même pas encore été bonjourisé. Et bien, @bonjourmozilla, tu dors&nbsp;?
+[article]: http://adblockplus.org/blog/google-chrome-and-pre-installed-web-apps
+
+> Google a récemment lancé une nouvelle version de sa boutique en ligne où l'on peut installer des extensions et des applications Web. Une fonctionnalité en particulier a attiré mon attention&nbsp;: la boutique signale les extensions que vous avez déjà installées. Comment est-ce que la page Web peut connaître les extensions installées dans votre navigateur&nbsp;?
+
+> La réponse est simple. La boutique est une application Web pré-installée (en fait, elle est même codée en dur dans le navigateur lui-même). Les applications Web dans Chrome peuvent avoir des permissions spéciales, si elles les demandent, comme les extensions. En regardant le fichier des préférences on découvre les droits de la boutique&nbsp;: elle peut accéder aux APIs `management` et `webstorePrivate`. La première permet de lister les extensions que vous avez installées, ce qui explique comment le site de la boutique peut le savoir. Mais cette API permet bien plus&nbsp;: activer ou désactiver les extension, et même les désinstaller sans vous prévenir.
+
+> L'API `webstorePrivate`, comme son nom l'indique, contient des fonctions spécifiques à la boutique. Sa documentation n'est pas disponible en ligne, mais on  peut la trouver dans le fichier `chrome.dll`. Elle semble être l'équivalent pour Chrome de la fonctionnalité `installTrigger`[^install] de Firefox, à la différence que Firefox met celle-ci à la disposition de tous les sites. Mais les fonctionnalités de `webstorePrivate` vont plus loin. Elle possède une méthode `silentlyInstall()`. La documentation prétend que seules quelques extensions peuvent être installées en faisant appel à cette méthode. La liste de ces extensions figure dans le fichier `extension_webstore_private_api.cc` dans le code source de Chrome. Il semble que les deux seules extensions qui peuvent utiliser cette méthode sont le bouton Google +1 et les notifications Google+. La liste contient 6 ID d'extensions qui ne sont actuellement pas utilisés, mais Google peut ajouter ces extensions à sa boutique n'importe quand[^silent].
+
+[^install]: c'est la fonctionnalité de Firefox qui permet à un site de vous proposer d'installer une extension.
+[^silent]: ce qui signifie si je comprend bien qu'il suffira d'aller dans la boutique pour que l'extension s'installe silencieusement.
+
+> Si vous utilisez les fonctions de synchronisation de Chrome, la boutique vous connait déjà, grâce à la méthode `getBrowserLogin()`. Si vous n'utilisez pas la synchronisation, les méthodes `setStoreLogin()` et `getStoreLogin()` garantissent que la boutique ne vous oublie jamais, même si vous supprimez tous vos cookies. 
+
+> C'est tout pour la boutique. Mais en consultant mon fichier des préférences, j'ai découvert que j'avais d'autres d'applications Web que je n'avais jamais installé. YouTube&nbsp;? GMail&nbsp;? D'où viennent-elles&nbsp;? On dirait que ces applications ont eu de l'aide pour gagner leur popularité dans la boutique Web. Dans mon installation de Chrome (du moins Chrome&nbsp;16 et Chrome&nbsp;17, pas Chrome&nbsp;15), il y a un fichier `default_apps/external_extensions.json` où ces applications sont définies. Le supprimer semble le seul moyen de s'en débarrasser, mais naturellement elles reviendront à la prochaine mise à jour de Chrome.
+
+> Évidemment, le but ici n'est pas de tricher sur la popularité des applications Web maison (ça l'est peut-être jusqu'à un certain point). Les applications Web installés sont en évidence lorsqu'on ouvre un nouvel onglet vierge. C'est probablement le but. Après tout, cet espace est là pour la publicité (une entrée dans le fichier de préférence me dit qu'il y avait une campagne de pub pour le Chromebook sur cette page jusqu'au 8&nbsp;Novembre, mais je ne l'ai pas vue, j'ai dû la louper). Autre effet secondaire&nbsp;: comme l'application Gmail est installée, Gmail a la permission d'afficher des alertes et peut donc afficher des notifications hors de Chrome sans demander la permission à l'utilisateur. Dommage pour tous les autres Webmails.
+
+> Ne comprenez pas mal ce que je dis&nbsp;: Google Chrome est un bon navigateur, et on peut facilement être excité, argumenter sur les tests de performance, l'implémentation des nouveaux standards, etc. Mais parfois vous recevez un rappel&nbsp;: c'est un produit Google et il doit servir à Google. Son but n'est pas que d'améliorer le Web, c'est aussi de promouvoir les produits Google et leur donner un avantage sur les services concurrents. Google peut bien parler de neutralité du réseau, mais dans leur navigateur leurs services ont la priorité. Même si cela nécessite de violer votre vie privée.
+
