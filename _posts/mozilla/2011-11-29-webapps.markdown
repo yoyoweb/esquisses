@@ -1,0 +1,91 @@
+---
+  layout: post
+  title: "Le Web des applications arrive !"
+  published: true
+  tags:
+  - Mozilla
+  - WebApps
+  - WebAPI
+  - B2G
+---
+
+Le Web était initialement une plateforme de partage de documents. Il devient aujourd'hui de plus en plus une plateforme applicative, un endroit où l'on peut réaliser des traitements&nbsp;: communiquer par *mail* ou messagerie instantanée, traiter des photos, jouer, etc. Les applications Web profitent des gènes d'ouverture de la plateforme&nbsp;: n'importe qui peut relativement simplement écrire une application pour le Web qui sera accessible depuis tout terminal connecté au réseau. Les applications n'utilisant que les technologies du Web, leur code source est disponible, ce qui permet de partager le savoir&nbsp;: on peut étudier leur fonctionnement pour apprendre avant de créer les siennes. Cette caractéristiques est une des principales raisons du succès initial du Web des documents, elle conduira probablement également à un rapide succès du Web des applications.
+
+Le Web était prévu au départ pour partager des documents. Pour offrir de nouvelles fonctionnalités, il faut inventer de nouvelles normes, et les implémenter dans les terminaux qui se connectent à la toile. HTML5 est une première étape dans cette direction, mais elle est loin d'être suffisante. Mozilla, pour garantir que le Web reste un médium ouvert et attractif, travaille donc à inventer de nouvelles fonctionnalités pour permettre de créer des applications Web toujours plus puissantes. Deux articles publiés ces dernières heures indiquent que l'on est en bonne voie.
+
+Le premier annonce que vendredi prochain, le 2 décembre, se déroulera le [premier test][test] de l'infrastructure de gestion d'applications Web à laquelle travaille Moz.
+
+Le second fait le point sur [l'avancement des Web APIs][WebAPIs], un ensemble de spécifications qui visent à permettre aux applications Web d'intéragir avec le terminal sur lequel elles s'exécutent, par exemple, sur un ordiphone, d'accéder à la caméra ou d'envoyer des SMS.
+
+[test]: https://quality.mozilla.org/2011/11/web-applications/
+[WebAPIs]: http://johnhammink.blogspot.com/2011/11/lets-have-look-at-some-recently-landed.html
+
+## Les applis Web à la sauce Mozilla
+
+> Un monde meilleur combinerait la commodité et le plaisir d'utilisation des applications avec la puissance du Web. (…) Dans ce monde, le navigateur et les applications nous connecteraient tous deux à un Internet universellement accessible et interopérable, qui encouragerait l'innovation sans aucune censure. -- <cite>Mitchell Baker</cite> ([traduite par FrenchMozilla][lizard1])
+
+Il s'agit des premiers tests publics à grande échelle de l'architecture ouverte pour applications Web proposée par Mozilla. Les applications Web sont des sites Web que l'on installe dans son navigateur. Ils peuvent ainsi offrir plus de fonctionnalités, par exemple stocker des informations localement ou fonctionner même en l'absence de connexion au réseau. L'architecture proposée par Mozilla inclut une boutique qui permet d'acheter des applications et une extension pour les gérer dans le navigateur: explorer la boutique, installer ou supprimer une application, la synchroniser entre ses différents navigateurs (y compris celui de votre ordiphone). Elle comporte également de nouvelles interfaces permettant aux applications Web de communiquer avec le navigateur et l'ordinateur.
+
+Vendredi, vous pourrez essayer cette architecture et participer à sa mise au point. La journée de tests est ouverte à tous et toutes (sous réserve, comme d'habitude, de parler anglais). Vous pourrez entre autres simuler l'achat d'une application, l'installer dans votre navigateur et la supprimer. Et bien sûr, essayer en avant première les premières applications développées par Mozilla, en particulier des jeux.
+
+Comme je suis un peu curieux, j'ai installé la dernière version de l'extension de gestion de WebApps. Premier sourire&nbsp;: c'est une extension Jetpack, pas besoin de redémarrer, une icône apparaît dans la barre des extensions, qui donne accès à l'application. Deuxième sourire, on me propose tout de suite de me connecter en utilisant BrowserID, la technologie proposée par Mozilla pour simplifier la connexion à des sites. Je choisis le mail avec lequel je veux me connecter, je clique, et pour la première fois… ça marche&nbsp;! (jusqu'à présent mes tentatives d'utilisation de BrowserID avaient été infructueuses). Me voici connecté à la future boutique d'applications qui, petit luxe, est en partie traduite en français[^trad]. Huit applications sont déjà disponibles, pour des prix allant de gratuite à 0,01$[^paypal]. En attendant l'activation du compte Paypal qui sera utilisé pour les tests, je n'ai pu tester que la seule application gratuite, l'application en ligne de création d'extensions Jetpack.
+
+[^trad]: la boutique est en fait une extension du site actuel de distribution des extensions.
+
+Pour qui a déjà utilisé les boutiques d'application Web dans d'autres navigateurs, il n'y a rien de révolutionnaire&nbsp;: les applications ne sont finalement rien d'autre que des pages Web, gérées comme des extensions, mais qui peuvent accéder à davantage de fonctionnalités du navigateur, en demandant la permission. La vrai différence, c'est que c'est développé dans l'esprit d'ouverture de Mozilla. La vrai différence, elle est dans les valeurs. La boutique de Mozilla sera ouverte&nbsp;: les applications pourront être installées dans tous les navigateurs[^chrome]. La boutique elle-même sera, si je ne m'abuse, libre, ce qui signifie que n'importe qui pourra créer une boutique d'applications en ligne. C'est la fin du monopole et du contrôle de quelques distributeurs. D'ici quelques mois, le temps que tout se mette en place, le terreau sera prêt pour que se développe un nouvel éco-système d'applications Web universelles. Chaque développeur pourra diffuser comme il le souhaite des applications qui s'exécuteront dans tous les navigateurs modernes. Et ça, c'est une révolution&nbsp;!
+
+[lizard1]: http://blog.frenchmozilla.org/index/post/2011/08/12/Le-mod%C3%A8le-des-applications-et-le-Web
+[^paypal]: Pour la durée des tests, un faux compte Paypal sera mis en place, qui permettra de payer sans bourse délier. Gros grincement de dents quant même, Paypal étant ce grand ami de la liberté sur le Net qui permet de verser de l'argent au KKK mais pas à Wikileaks.
+[^chrome]: alors que la boutique de Google ne permet d'installer ses applications que dans Chrome, et a des [comportements un peu limite][chromestore], puisqu'elle permet entre autre d'installer des applications à l'insu de l'utilisateur.
+[chromestore]: http://esquisses.clochix.net/2011/11/27/Chrome/
+
+## De nouvelles interfaces pour le Web
+
+J'ai évoqué à plusieurs reprises la possibilité pour les applications Web d'accéder à des nouvelles fonctionnalités du navigateur. Pour ce faire, Mozilla implémente des nouvelles spécifications et, lorsqu'elles n'existent pas, en propose. Le projet avait commencé pour étendre le pouvoir des applications Web. Le lancement de B2G, nom de code du futur système d'exploitation de Mozilla, lui a donné un nouvel essor. Avec B2G, le navigateur servira de système d'exploitation pour un téléphone ou une tablette. Toutes les applications qui pourront s'exécuter sur le terminal le feront donc dans un navigateur, en utilisant les technologies du Web. Pour cela, il faut permettre à des application Web d'accéder complètement au terminal, à sa caméra, son système de fichiers, etc. Mozilla souhaite disposer dans les prochains mois de toutes les APIs nécessaires pour faire fonctionner un téléphone, uniquement depuis des applications Web.
+
+Cela implique&nbsp;:
+* l'accès aux fonctions de téléphonie, pour [recevoir et passer des appels][telephony] et [des SMS][SMS]&nbsp;: l'envoi et la réception de SMS sont quasiment bouclés, grâce à Mounir, et peuvent être [testés][SMS2];
+* l'accès au [carnet d'adresse][contact]&nbsp;: [en cours][contact2];
+* l'accès à l'[état de la batterie](https://wiki.mozilla.org/WebAPI/BatteryAPI)&nbsp;: une première implémentation, due au génie de Mounir, de la [spécification du W3C][batw3c] est disponible dans les *nightlies* de Firefox pour GNU/Linux et Firefox Mobile, et vous pouvez la tester [ici][bat1], [là][bat2] et [là][bat3]. Elle permet de détecter si le terminal fonctionne sur sa batterie ou sur le secteur, l'état de charge de la batterie, et d'estimer l'autonomie restante;
+* l'accès à l'[appareil photo / la caméra][camera]&nbsp;: une première version, qui permet déjà de viser et de [prendre des clichés][camera2], est testable. Une intégration avec WebRTC est prévue courant 2012, qui devrait permettre de faire de la vidéo-conférence;
+* l'accès aux autres technologies de communication comme le [bluetooth][bluetooth] et le NFC;
+* l'accès aux caractéristiques physiques du terminal;
+* l'accès à ses [réglages][settings];
+* l'accès aux [contrôleurs USB][USB];
+* l'accès à l'accéléromètre;
+* l'accès aux fonctions de géolocalisation (GPS ou autres)&nbsp: disponible depuis Firefox 3.5 si je ne m'abuse;
+* l'accès au [vibreur][vibrator]&nbsp;: le W3C a un brouillon de spécification, il a été implémenté. Vous pouvez donc commencer à faire [vibrer à volonté][vibrator2] votre téléphone;
+* des fonctions de [gestion des applications Web][OWA], elles sont en bonne voie;
+* pour ce qui est de l'accès au système de fichiers du terminal, Mozilla est pour l'instant réticent, car cela pose de gros problèmes de sécurité (il faudrait pouvoir gérer des droits finement, ce qui n'est guère envisageable). Les développeurs privilégient donc actuellement l'utilisation d'[IndexedDB][IndexedDB][^IndexedDB] pour permettre aux applications de stocker localement des données;
+
+Je ne suis pas dans les secrets des Dieux de Mountain View mais j'ai cru comprendre qu'un prototype utilisable était attendu avant la fin de l'année, et que Mozilla espère que B2G pourra avant la fin 2012 être en mesure d'équiper des ordiphones du commerce.
+
+Pour en savoir plus, on est chez Mozilla donc tout ou presque est documenté et librement accessible, notamment sur le [Wiki][WebAPI]. Et un [très joli tableau de bord][yet] synthétise l'avancement de toutes les APIs.
+
+L'implémentation de toutes ces APIs avance vite, très vite, c'est impressionnant. Ce qui manque aujourd'hui, ce sont des tests&nbsp;: tests techniques, pour vérifier le fonctionnement sur un maximum de terminaux. Mais aussi tests fonctionnels, pour améliorer les APIs afin qu'elles collent au mieux aux besoins et aux usages. Si vous avez un téléphone sous Android et avez envie de voir à quoi ressemblera le futur, tout en contribuant à le forger, c'est peut-être le moment d'installer une version de test de Firefox mobile et de commencer à jouer avec.
+
+Un petit mot de conclusion&nbsp;? Je lisais il y a peu un autre article, écrit par un Mozillien, expliquant que chez Mozilla on ne se contentait pas de causer de Web, mais on créait le Web, tous les jours. Il y a quelques mois, je m'inquiétais de la montée en puissance du modèle des applications propriétaires et fermées inspiré par Apple. La menace grandissait d'une fermeture de la parenthèse enchantée du Web, d'un retour à un monde fermé, divisé en silos à l'intérieur desquels nous serions prisonniers. Aujourd'hui, la menace est toujours là, mais moins inquiétante, car la riposte arrive, les différents projets de Mozilla autour des applications Web proposent une alternative crédible au modèle des applications fermées. L'espoir est là. Si ça se trouve, si des opérateurs de téléphonie se décident à proposer des offres respectueuses de la neutralité des réseau, peut-être qu'en 2013 j'aurai enfin un ordiphone et pourrai lire Twitter dans le métro. La route est encore longue, mais la voie de plus en plus libre. Bonne nuit, faites de jolis rêves d'API Web.
+
+
+[IndexedDB]: http://people.mozilla.org/~jhammink/webapi_test_pages/IndexeddbAPIdemo.html
+[OWA]: https://developer.mozilla.org/en/OpenWebApps/The_JavaScript_API
+[SMS2]: http://people.mozilla.org/~jhammink/webapi_test_pages/SMSAPI_send_receive.html
+[SMS]: https://wiki.mozilla.org/WebAPI/WebSMS
+[USB]: https://wiki.mozilla.org/WebAPI/WebUSB
+[WebAPI]: https://wiki.mozilla.org/WebAPI
+[^IndexedDB]: c'est une base de données locale permettant à des applications Web de stocker des informations. Elle est disponible dans Firefox depuis la version 4, mais la spécification n'est pas encore définitive;
+[bat1]: http://oldworld.fr/mozilla/battery.html
+[bat2]: http://oldworld.fr/mozilla/battery-test.html
+[bat3]: http://people.mozilla.org/~jhammink/webapi_test_pages/BatteryAPIdemo.html
+[batw3c]: http://www.w3.org/TR/2011/WD-battery-status-20111129/
+[bluetooth]: https://bugzilla.mozilla.org/show_bug.cgi?id=674737
+[camera2]: http://people.mozilla.org/~jhammink/webapi_test_pages/CameraAPIdemo.html
+[camera]: https://wiki.mozilla.org/WebAPI/CameraControl
+[contact2]: https://bugzilla.mozilla.org/show_bug.cgi?id=674720
+[contact]: https://wiki.mozilla.org/WebAPI/ContactsAPI
+[settings]: https://wiki.mozilla.org/WebAPI/SettingsAPI
+[telephony]: https://wiki.mozilla.org/WebAPI/WebTelephony
+[vibrator2]: http://people.mozilla.org/~jhammink/webapi_test_pages/VibratorAPIdemo.html
+[vibrator]: https://bugzilla.mozilla.org/show_bug.cgi?id=679966
+[yet]: http://arewemobileyet.com/
+
