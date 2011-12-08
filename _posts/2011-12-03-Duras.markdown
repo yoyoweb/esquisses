@@ -1,0 +1,17 @@
+---
+  layout: post
+  title: Sans Titre
+  date: 2011-12-03 22:10:00
+---
+
+Extrait sorti de son contexte d'une réponse de Marguerite Duras dans un entretien en 1985, découverte grâce à [Olivier Ertzscheid][affordance].
+
+<blockquote cite="http://affordance.typepad.com/mon_weblog/2011/12/le-petit-lien-du-week-end-1.html">Quand on peut faire le tour du Monde en huit jours ou quinze jours, pourquoi le faire ? Dans le voyage il y a le temps du voyage. C’est pas voir vite, c’est voir et vivre en même temps. Vivre du voyage ; ça ne sera plus possible. Tout sera bouché. Tout sera investi. Il restera la mer quand même. Les océans. Et puis la lecture. — <cite>Marguerite Duras</cite></blockquote>
+
+Nous avons perdu le voyage. Nous sautons instantanément de points en points. Sans voyager. Et en sommes bien heureux. Le voyage n'apportait qu'un savoir amer.
+
+Je passais dans une librairie aujourd'hui. Me conformant à l'injonction de faire des cadeaux à date fixe. Pincement au cœur en laissant mes yeux flâner sur les couvertures des poches. Ça doit faire douze ans que j'ai l'ADSL chez moi et ne lis quasiment plus de livres. Ils me manquent. Comme me manque la mer. Les livres sont une consolation. La mer une source sans fond de rêverie et de méditation. Un jour. Un jour j'arrêterai. Un jour j'arrêterai de courir. Un jour j'arrêterai de courir derrière les octets pour essayer de ne pas laisser le vieux monde, celui qui m'a depuis longtemps rattrapé et digéré. Pour ne pas laisser le vieux monde me distancier. Un jour j'arrêterai de courir et j'irai m'assoir sur une plage avec une collection de livres. Un jour…
+
+Ce jour n'arrivera sans doute jamais. Le jour où je m'arrêterai, il n'y aura plus depuis longtemps ni livres de papier, ni mer qui ne soit souillée.
+
+[affordance]: http://affordance.typepad.com/mon_weblog/2011/12/le-petit-lien-du-week-end-1.html
