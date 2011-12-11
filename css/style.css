@@ -5,19 +5,28 @@
     font-weight: normal;
     font-style: normal;
 }
+html {
+  background: url("black_paper.png") repeat scroll 0 0 black;
+  /* source: http://subtlepatterns.com/?p=281 This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+   * The patterns can be used freely in both personal and commercial projects with no attribution required, but always appreciated.
+   * Made by Atle Mo http://behindmyscenes.com/
+   */
+}
 body { 
-  font-size: 87.5%;
+  /*font-size: 87.5%;*/
+  font-size: 1em;
   line-height: 1.4em;
-  font-family: serif;
+  font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'RieslingRegular', serif;
   font-weight: bold;
   line-height: 1em;
+  text-align: left;
   -moz-hyphens: none;
   hyphens: none;
 }
-h1 { font-size: 4em; margin-bottom: 0.5em; }
+h1 { font-size: 4em; margin: 0.5em 0; }
 h2 { font-size: 2.8em; margin-bottom: 0.75em; }
 h3 { font-size: 2em; margin-bottom: 1em; }
 h4 { font-size: 1.4em; margin-bottom: 1.25em; }
@@ -57,14 +66,13 @@ h1 a, h2 a {
  *-----------*/
 * {
   color: #FFF;
-  background-color: #000;
 }
 /*-----------
  * Page layout
  *-----------*/
 body {
   width: 44em;
-  margin: auto;
+  margin: 50px auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
@@ -73,6 +81,7 @@ body {
 }
 #header p {
   font-style: italic;
+  font-size: .875em;
 }
 #main {
   width: 33em;
@@ -82,9 +91,24 @@ body {
 #main article.hentry {
   margin: 0 auto 10em auto;
 }
+#main article li {
+  margin-bottom: 1.5em;
+}
 #main article footer {
   margin: 3em;
   font-size: 71%;
+}
+#main article footer ul.taglist {
+  list-style: none;
+}
+#main article footer ul.taglist li {
+  float: left;
+  font-weight: bold;
+  margin: 5px;
+}
+#main article footer p.meta {
+  clear: both;
+  margin: 2.5em 0;
 }
 #main article sup {
   font-size: 75%;
@@ -98,9 +122,34 @@ body {
   list-style-type: none;
 }
 .footnotes p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
 }
 .footnotes li {
   margin: 1em;
   font-size: 87%;
 }
+#headBlur {
+  background-image: -moz-linear-gradient(bottom , transparent 0%, #000000 99%);
+  background-image: -webkit-linear-gradient(bottom , transparent 0%, #000000 99%);
+  height: 100px;
+  top: 0;
+}
+#footBlur {
+  background-image: -moz-linear-gradient(top, transparent 0%, #000000 75%);
+  background-image: -webkit-linear-gradient(top, transparent 0%, #000000 75%);
+  height: 25%;
+  bottom: 0;
+}
+div.blurMargin {
+  width: 200%;
+  left: -50%;
+  position: fixed;
+  padding: 0px;
+  pointer-events: none;
+}
+/*
+#headBlur:hover, #footBlur:hover {
+  height: 10px;
+  -moz-transition: height 1s ease-in-out;
+}
+*/

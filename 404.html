@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Quatre Cent Quatre</h1>
+<p>Bonjour,<br />
+Je suis navré mais il y a un tel bordel par ici que je n'arrive pas à mettre la main sur ce que vous cherchez. Peut-être le document a-t-il été temporairement dé-publié le temps d'une correction. Ou peut-être son nom a-t-il changé. Voici la liste des derniers brouillons, vous aurez peut-être plus de chance que moi
+ d'y trouver ce que vous cherchiez.</p>
+<ul>
+{% for post in site.posts limit:42 %}
+  <li about="{{ site.url }}{{ post.url }}" class="hentry">
+    <span><a href="{{ site.url }}{{ post.url }}" property="dc:title">{{ post.title }}</a></span>
+    <span class="seemore"> — publié le <data property="dc:created published">{{ post.date | date: "%d %b %Y" }}</data></span>
+  </li>
+{% endfor %}
+</ul>
+
