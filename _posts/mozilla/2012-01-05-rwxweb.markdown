@@ -1,0 +1,39 @@
+---
+  layout: post
+  title: Lire, Écrire, Exécuter le Oueb
+  published: true
+  date: 2012-01-05 00:31:00
+  tags:
+  - Mozilla
+  - WebMakers
+---
+
+Michelle Levesque est une Mozilienne qui a rejoint il y a peu la Fondation pour participer à l'éducation des internautes au Web, pour leur apprendre à devenir des producteurs, et non plus de simples consommateurs. Elle a ouvert [un blog][blog], vrai journal où elle note ses actions et ses idées au jour le jour. À un rythme si soutenu que je n'ai pas encore eu le temps de m'y plonger, mais je devine que c'est une mine d'idées à rediffuser. Aujourd'hui, alors qu'elle vient de publier une [salve de notes][salve] expliquant pourquoi il est important de posséder certaines compétences, j'ai enfin eu la curiosité d'aller regarder ce que signifiait le titre de son carnet, **rwxweb**.
+
+La [réponse][rwx] me plait bien, hop, traduction&nbsp;:
+
+<section vocab="http://schema.org/" about="http://rwxweb.wordpress.com/what-is-rwxweb/" typeof="Article">
+<blockquote property="articleBody">
+<div markdown="1">
+RWX sont les trois bits de permission utilisés par les ordinateurs pour indiquer si on a le droit de liRe un fichier, de l'écWire et de l'eXécuter.
+
+Je pense qu'on devrait avoir ces trois droits sur le Web&nbsp;:
+* le Web devrait être lisible et ouvert, avec autant de transparence que possible;
+* quiconque a envie de publier quelque chose devrait avoir le droit de l'écrire sur le Web. Cela signifie que nous devons apprendre aux gens à utiliser les outils et les technologies nécessaires à cela;
+* le Web devrait être exécutable&nbsp;: les gens devraient *faire* des choses sur le Web, il devrait être comme une boîte de Lego, autorisant toutes les possibilités et les permutations, et non un objet immuable;
+
+(…)
+</div>
+</blockquote>
+<footer><cite>[What is rwxweb][rwx]</cite> par <span property="author">Michelle Levesque</span></footer>
+</section>
+
+Faire du Web un endroit où chacun et chacune a non seulement le droit théorique, mais a surtout les moyens de lire, d'écrire et de créer. Rendre les internautes autonomes en leur enseignant et en leur donnant les moyens de lire le Web, d'y écrire et de s'en servir pour créer. Je trouve que c'est un beau résumé de la mission de Mozilla.
+
+Et puisqu'on est jeudi, jour des Bonjour Womoz, je terminerai en précisant que [Michelle][] est vraiment une Womozillienne très bien, puisque Karma et Nox, deux chats, l'acceptent dans leur appartement. Ne manque plus qu'une [photo][] et je pourrai dire bonjour Michelle !
+
+[blog]: http://rwxweb.wordpress.com/
+[salve]: http://rwxweb.wordpress.com/2012/01/04/whys/
+[rwx]: http://rwxweb.wordpress.com/what-is-rwxweb/
+[Michelle]: http://rwxweb.wordpress.com/about/
+[photo]: https://lh5.googleusercontent.com/-Yottp06iByA/TfbKcWM5ulI/AAAAAAAAGR0/DutsM1P2L_w/s800/IMG_8262-6.jpg

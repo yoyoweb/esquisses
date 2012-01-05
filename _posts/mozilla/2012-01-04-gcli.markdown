@@ -1,0 +1,37 @@
+---
+  layout: post
+  title: Bonjour la ligne de commande
+  published: true
+  date: 2012-01-04 23:29:00
+  tags:
+  - Mozilla
+  - Bonjour
+---
+
+Depuis le 12 décembre, Firefox dispose d'un interpréteur de commandes&nbsp;!
+
+Les plus anciens se souviendront qu'en Juillet 2009, les Labs lançaient [Bespin][], un environnement de développement intégré au navigateur. Une de ses caractéristiques était d'intégrer un interpréteur de commandes, inspiré à la fois des **vrais éditeurs** (Emacs, Vi) et de l'expérience du très regretté [Ubiquity][]. Le projet a connu une vie mouvementée. Renommé SkyWriter puis [Ace][], l'éditeur est à présent intégré à l'IDE en ligne Cloud9. La partie gérant la ligne de commande, renommée [GCLI][] est devenue un composant autonome, utilisé entre autres dans Ace, mais aussi depuis quelques jours dans les nouveaux outils pour développeurs de Firefox.
+
+L'intégration de cette ligne de commande n'en est qu'à ses débuts, et elle est désactivée par défaut. Pour l'utiliser, il faut modifier la valeur de la préférence `devtools.gcli.enable` dans une *Nightly*. La console Web se transforme alors en une ligne de commandes. Il est toujours possible d'y exécuter du JavaScript, en l'entourant d'accolades, mais on peut également y taper des commandes pour interagir avec les outils de développement, voire l'ensemble du navigateur. Pour l'instant la seule commande disponible est `inspect` qui permet de sélectionner un nœud via un sélecteur CSS et d'ouvrir l'inspecteur sur ce nœud. 
+
+Cette ligne de commande est une lointaine descendante d'Ubiquity, donc il sera bien sûr possible d'[écrire ses propres commandes][commands], en JavaScript évidemment. Plusieurs [tickets][bmo] ont été ouverts pour créer des commandes permettant par exemple de [faire une copie d'écran][screenshot], gérer les [préférences][prefs] ou les [cookies][], etc. Comme l'essentiel des outils pour développeurs de Firefox, ces commandes seront écrites en JavaScript. Elles peuvent être une bonne occasion de commencer à contribuer à Firefox. Vous rêvez d'un outil supplémentaire pour les développeurs&nbsp;? Écrivez-le&nbsp;! Voilà en tout cas le meilleur des navigateurs encore meilleur, car encore plus bidouillable.
+
+Quelques liens pour en savoir plus&nbsp;:
+* la [page du projet][projet];
+* réflexions sur les commandes sur le [Wiki][] et [dans un fil][list] de discussion;
+* Une [démonstration][demo] de l'interface (les commandes ne sont pas celles disponibles actuellement dans Firefox), signalée par [Frank];
+
+[Bespin]: https://mozillalabs.com/skywriter/2009/07/24/introducing-bespin/
+[Ubiquity]: https://mozillalabs.com/ubiquity/
+[Ace]: http://ace.ajax.org/
+[GCLI]: https://github.com/joewalker/gcli
+[projet]: https://wiki.mozilla.org/DevTools/Features/GCLI
+[Wiki]: https://wiki.mozilla.org/DevTools/ThinkingInCommands
+[list]: http://groups.google.com/group/mozilla.dev.apps.firefox/browse_thread/thread/6c620eaab38bc06d#
+[commands]: https://github.com/mozilla/gcli/blob/master/docs/writing-commands.md
+[bmo]: https://bugzilla.mozilla.org/buglist.cgi?order=Importance&short_desc=GCLI&resolution=---&resolution=DUPLICATE&query_format=advanced&short_desc_type=allwordssubstr&component=Developer%20Tools%3A%20Console
+[screenshot]: https://bugzilla.mozilla.org/show_bug.cgi?id=709460
+[prefs]: https://bugzilla.mozilla.org/show_bug.cgi?id=693259
+[cookies]: https://bugzilla.mozilla.org/show_bug.cgi?id=683511
+[demo]: https://people.mozilla.com/~jwalker/gcli/
+[Frank]: http://frank.taillandier.me/
