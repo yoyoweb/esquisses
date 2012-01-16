@@ -12,9 +12,10 @@ layout: default
         {% endfor %}
       </ul>
       <p class="meta">Publié le 
-      <data property="dc:created published">{{ page.date | date: "%d %b %Y" }}</data> par 
+      <time property="dc:created" class="published">{{ page.date | date: "%d %b %Y" }}</time> par 
       <span class="author" property="dc:contributor">{% include author.html %}</span> / 
       <span property="dc:identifier"><a href="{{ site.url }}{{ page.url }}" rel="bookmark">lien permanent</a></span>
       </p>
+      <p>Pour réagir, n'hésitez-pas à m'écrire&nbsp;: clochix chez clochix.net</p>
     </footer>
   </article>
