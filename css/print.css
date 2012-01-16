@@ -6,11 +6,6 @@
     font-style: normal;
 }
 html {
-  background: url("black_paper.png") repeat scroll 0 0 black;
-  /* source: http://subtlepatterns.com/?p=281 This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-   * The patterns can be used freely in both personal and commercial projects with no attribution required, but always appreciated.
-   * Made by Atle Mo http://behindmyscenes.com/
-   */
 }
 body { 
   /*font-size: 87.5%;*/
@@ -65,7 +60,7 @@ h1 a, h2 a {
  * Colors
  *-----------*/
 a {
-  color: #CCC;
+  color: #000;
 }
 /*-----------
  * Page layout
@@ -75,7 +70,7 @@ body {
   margin: 50px auto;
   -moz-hyphens: auto;
   hyphens: auto;
-  color: #CCC;
+  color: #000;
   text-shadow: 2px 2px 2px #000;
 }
 #header {
@@ -129,33 +124,4 @@ body {
 .footnotes li {
   margin: 1em;
   font-size: 87%;
-}
-#headBlur {
-  background-image: -moz-linear-gradient(bottom , transparent 0%, #000000 99%);
-  background-image: -webkit-linear-gradient(bottom , transparent 0%, #000000 99%);
-  height: 10%;
-  top: 0;
-}
-#footBlur {
-  background-image: -moz-linear-gradient(top, transparent 0%, #000000 75%);
-  background-image: -webkit-linear-gradient(top, transparent 0%, #000000 75%);
-  height: 10%;
-  bottom: 0;
-}
-div.blurMargin {
-  width: 200%;
-  left: -50%;
-  position: fixed;
-  padding: 0px;
-  pointer-events: none;
-}
-/*
-#headBlur:hover, #footBlur:hover {
-  height: 10px;
-  -moz-transition: height 1s ease-in-out;
-}
-*/
-/* Maroku adds p in my blockquotes */
-section.cite header p, section.cite footer p {
-  display: inline;
 }
