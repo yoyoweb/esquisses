@@ -1,0 +1,33 @@
+---
+  layout: post
+  title: De quelques mythes sur les startups
+  published: true
+  date: 2011-12-20 01:29:00
+---
+
+[Michael Arrington][arrington] est un personnage de la Vallée du silicone souvent qualifié d'influent. Il a entre autre fondé Techcrunch, et est sans doute l'un des journalistes les plus lus sur le sujet des jeunes pousses du Web. Il a publié il y a quelques jours un article intitulé «&nbsp;[Startups Are Hard. So Work More, Cry Less, And Quit All The Whining ][crying]&nbsp;» (*c'est dur d'être une jeune pousse, alors travaillez plus, pleurez moins et arrêtez toutes ces pleunicheries*). Il répondait à quelques articles dénonçant les conditions de travail dans les jeunes entreprises de la vallée. Son article lui-même est absolument sans intérêt, de la pure propagande capitaliste, pour réussir dans la vie il faut bosser dur, etc. Mais pour illustrer ses propos il utilise des extraits du journal où Jamie Zawinski [raconte les débuts de Netscape][Netscape]. [zwg][zwg] est un bidouilleur à l'origine de quelques petits programmes comme XEmacs, un fork d'Emacs, et Netscape Navigator, un navigateur Web. Il a été un des artisans de la libération du code de ce navigateur et un des fondateurs de Mozilla. En 1999, il a quitté le monde du logiciel pour devenir propriétaire d'une boîte de nuit. Il n'en continue pas moins à s'exprimer régulièrement sur des sujets techniques ou touchant au Web. Et n'a guère apprécié qu'Arrington utilise ses écrits. J'aime beaucoup sa réponse, «&nbsp;[Watch a VC use my name to sell a con][sellacon]&nbsp;» (*voir un investisseur utiliser mon nom pour fourguer une arnaque*) dont voici la traduction de quelques extraits&nbsp;:
+
+>Il essaie de faire croire que la seule manière de réussir dans l'industrie logicielle est de faire de horaires de folie, de dormir sous son bureau et de renoncer à votre seule et unique jeunesse, et que si vous ne faîtes pas ça vous êtes con. Il utilise mes mots pour essayer d'appuyer cette thèse.
+
+>Je déteste ça, parce que ça n'est pas vrai, et c'est déloyal.
+
+>Ce qui est vrai, c'est que pour que le modèle économique des investisseurs fonctionne, vous devez renoncer à votre vie pour leur permettre de devenir riches.
+
+>Suivez ce putain de fric. Lorsqu'un investisseur vous dit ce qui est bon pour vous, vérifiez votre porte-feuille et comptez vos doigts.
+
+>Il vous fait le coup du «&nbsp;si vous vous bougez le cul et arrêtez de dormir, vous allez devenir riches&nbsp;» parce que le seul moyen de devenir riche qu'ont les gens qui font ce métier là, c'est que de jeunes génies naïf et asociaux croient à cette histoire. S'il ne pouvaient pas vivre à leurs basques, les investisseurs risqueraient de devoir travailler pour vivre. Une fois que le gamin sera épuisé, ils le remplaceront par un nouveau.
+
+>J'ai touché un beau paquet de fric en gagnant avec Netscape à la loterie des startups, c'est vrai. La plupart des développeurs qui étaient là au début aussi. Mais les gens qui ont gagné cent fois plus que les développeurs&nbsp;? Je peux vous garantir qu'aucun d'entre eux ne dormait sous son bureau. Si vous regardez la liste des gens qui ont fait fortune dans l'industrie logicielle, je parie que vous allez avoir une vision bien différente de celle présentée ici des habitudes de sommeil et des horaires de travail qui mènent au succès.
+
+>Si votre but est d'enrichir les Arringtons du monde tout en, peut-être, si vous gagnez à la loterie, récupérant quelques unes des billes qu'ils ont négligées, alors oui, bougez votre cul sous les encouragements des banquiers et des spéculateurs.
+
+>Plutôt que ça, *moi* je vous recommande de faire ce que vous aimez parce que vous aimez le faire. Si ça signifie bosser des heures, fantastique. Si ça signifie quitter le bureau tous les jours à 18h pour votre cours de vannerie sous-marine, alors c'est fantastique aussi.
+
+<p markdown="1"><span class="author vcard"><span property="dc:contributor" class="fn">Jamie Zawinski</span></span> in <cite>[Watch a VC use my name to sell a con](http://www.jwz.org/blog/2011/11/watch-a-vc-use-my-name-to-sell-a-con/)</cite></p>
+
+[arrington]: http://en.wikipedia.org/wiki/Michael_Arrington
+[crying]: http://uncrunched.com/2011/11/27/startups-are-hard-so-work-more-cry-less-and-quit-all-the-whining/
+[Netscape]: http://www.jwz.org/gruntle/nscpdorm.html
+[zwg]: http://www.jwz.org
+[sellacon]: http://www.jwz.org/blog/2011/11/watch-a-vc-use-my-name-to-sell-a-con/
+

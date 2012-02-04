@@ -1,0 +1,78 @@
+---
+  layout: post
+  title: Watchdog, nouvelles expériences de gestion de l'identité numérique
+  published: true
+  date: 2011-12-19 23:26:00
+  tags:
+  - Mozilla
+  - Identity
+  - watchdog
+---
+
+Aider les internautes à mieux gérer leur identité et leur vie privée en ligne est un des objectifs de Mozilla. Un groupe de travail a été mis en place pour travailler sur le sujet. Sa première réalisation est BrowserID, un mécanisme de gestion de l'identité utilisant les adresses mail de l'utilisateur et le navigateur pour simplifier la connexion aux sites qui demandent une inscription. Aujourd'hui, Ben Adida, le responsable de groupe de travail, annonce le lancement de nouvelles explorations, sous le nom de **projet Watchdog**. Elles prendront la forme d'extensions pour Firefox (et les autres navigateurs lorsque cela sera possible). Le but est comme d'habitude d'apprendre en marchant, d'explorer de nouvelles voies et de concevoir de nouvelles fonctionnalités qui intègreront peut-être demain Firefox.
+
+La première de ces extensions est une aide à la saisie de mot de passe. Lorsque vous tapez un mot de passe, l'extension va au moyen d'une formule de calcul lui associer quatre couleurs qu'elle affichera en fond de la zone de saisie. En mémorisant les couleurs, vous pourrez rapidement savoir si vous n'avez pas fait de faute de frappe, sans même devoir soumettre le formulaire.
+
+Un des avantages que j'y vois est pour les têtes en l'air comme moi qui mélangent souvent leurs mots de passe. Combien de fois ai-je tapé un mot de passe à la place d'un autre. Et à chaque fois je croise les doigts pour que le site ne mémorise pas tous les mots de passe erronés que je saisis. Avec cette première extension, j'ai une chance de découvrir mon erreur avant d'envoyer le formulaire.
+
+Trêve de bavardages, voici une rapide traduction de l'annonce du projet Watchdog et de la présentation de la première extension.
+
+## [Watchdog&nbsp;: aider les utilisateurs à gérer leurs mots de passe et leur vie privée][watchdog]
+
+>Mozilla est une des rares organisations réellement centrée sur l'utilisateur. Nos [principes][manifeste] incluent ces deux déclaration importantes&nbsp;:
+
+>**La sécurité des personnes sur Internet est fondamentale et ne peut pas être considérée comme optionnelle.**
+
+>**Chacun doit avoir la possibilité de façonner son utilisation d'Internet.**
+
+>En matière de gestion de vos mots de passe et de vos préférences relatives à la vie privée, nous pensons qu'il existe une opportunité de faire bien mieux que ce que l'on fait actuellement sur le Web. C'est pourquoi nous lançons le projet Watchdog, une série d'expériences pour aider les utilisateurs à gérer leur identité et leur vie privée en ligne. Watchdog est un projet de recherche au sein du [groupe de travail sur l'identité][identity] et vise à compléter des produits existant comme [BrowserID][browserid].
+
+>Avec Watchdog, nous cherchons des moyens pour pousser l'utilisateur à prendre en matière de mots de passe et de réglages de sécurité, des décisions meilleures car mieux informées. Nous voulons que les utilisateurs sachent s'ils ont utilisé trop souvent un mot de passe. Nous voulons rendre plus simple le choix des réglages qui correspondent à leurs besoins. Nous voulons automatiser cela au maximum. Lorsque vous naviguez avec Watchdog, vous devriez vous sentir plus en sécurité parce que vous êtes plus en sécurité&nbsp;: vous avez un chien de garde.
+
+>Le développeur principal de Watchdog est [Paul Sawaya][paul], qui a fait un stage chez Mozilla l'été dernier et continue à travailler avec nous cette année pour son projet de fin d'études au Hampshire College. Nous sommes ravis qu'il s'occupe de cela.
+
+>Le projet Watchdog sera composé d'une série d'extensions indépendantes, développées pour Firefox et, dans certains cas, également pour les autres navigateurs modernes. La première de ces extensions est [Watchdog Visual Hashing][addon] pour Firefox ou Chrome. Paul en fait une description détaillée [sur son journal][hash].
+
+>N'hésitez pas à l'essayer avec [Firefox][firefox] ou [Chrome][chrome], récupérer le [code source][source] et nous [faire des retours][feedbacks].
+
+L'article de Paul présentant son extension&nbsp;:
+
+##[Hachage visual de mots de passe pour votre navigateur][hash]
+
+>Ces derniers mois, j'ai étudié l'état actuel de la gestion de la vie privée sur le Web. J'ai également commencé à créer une série d'outils pour informer l'utilisateur et lui ouvrir de nouvelles possibilités en rendant le navigateur plus intelligent. Naturellement, le sujet est vaste et aurait pu m'emmener dans de nombreuses directions (et vous verrez bientôt qu'il l'a fait), mais je suis à présent prêt à partager mon premier petit pas sur le chemin le plus urgent en matière de gestion de la vie privée.
+
+>Ce chemin le plus évident, je pense qu'il passe par une meilleure gestion des mots de passe. Firefox est déjà plutôt intelligent lorsqu'il s'agit de découvrir les mots de passe que vous saisissez dans des formulaires, et de vous proposer par la suite de remplir automatiquement ces formulaires. Les mots de passe sont chiffrés sur le disque via un mot de passe principal (*master password*), mais le réglage pour créer un mot de passe principal n'est pas aussi facile à découvrir que le gestionnaire de mots de passe lui-même. Celui-ci a une interface très simple qui vous permet de gérer vos comptes et de voir vos mots de passe, mais ne propose pas de conseils pour gérer judicieusement ses mots de passe.
+
+>J'ai commencé à réfléchir à ce à quoi pourrait ressembler un système de gestion des mots de passe moderne, et à comment il pourrait inciter l'utilisateur à faire de meilleurs choix en matière de protection de sa vie privée, sans que le système soit ignoré (ou pire, [détesté][hated]) comme le sont généralement tous les logiciels qui interrompent l'utilisateur au milieu d'une tâche.
+
+>En gardant cela à l'esprit, mon premier pas vers un gestionnaire de mots de passe plus intelligents a été d'expérimenter le hachage visuel de mots de passe. C'est une fonctionnalité discrète. Si vous ne l'avez jamais vu à l'œuvre, voici de quoi il s'agit. Le hachage visuel permet à votre navigateur d'afficher une information sur le mot de passe que vous tapez sans l'afficher directement à l'écran. L'idée est de faire correspondre la liste de tous les mots de passe possibles avec un ensemble (plus petit) de signes. Actuellement j'utilise quatre couleurs.
+
+<img width="320" height="193" src="http://3.bp.blogspot.com/-C6CE8vr8liU/Tucw2o25sCI/AAAAAAAAAAM/WKiela-pv9Y/s320/Screen_shot_2011-11-16_at_2.01.54_PM.png" alt="Exemple d'utilisation de l'extension: le fond du champs de saisie du mot de passeaffiche quatre couleurs"/>
+
+>À mesure que vous tapez votre mot de passe, les quatre couleurs changent. Au fil du temps, vous vous souviendrez des quatre couleurs et n'essayerez plus jamais de vous connecter en tapant un mauvais mot de passe.
+
+>Naturellement, le hachage visuel est plus souvent vu comme une fonction de confort plutôt que de sécurité. Elle rend les mots de passe plus faciles à mémoriser, ce qui pourrait encourager l'adoption de mots de passe plus complexes[^trad]. En tant que fonctionnalité d'un gestionnaire de mots de passe, je la trouve prometteuse comme métaphore visuelle pour afficher votre mot de passe à l'écran.
+
+>De plus, ne stocker pour certains mots de passe particulièrement critiques que le hachage visuel pourrait avoir une réelle valeur ajoutée en terme de sécurité. Le gestionnaire de mots de passe pourrait toujours fournir une aide à l'utilisateur et lui signaler où ce mot de passe est réutilisé. Tout cela sans devoir gérer le problème de stocker un mot de passe sur le disque, protégé par un mot de passe principal, comme ne le font pas je présume beaucoup d'utilisateurs.
+
+>Une dernière chose&nbsp;: je me suis brièvement inquiété du risque de fuite via des copies d'écran des informations de hachage d'un mot de passe sans sel[^sel], ce qui pourrait aider quelqu'un cherchant à casser le mot de passe. Pour y parer, les couleurs sont légèrement modifiées à chaque fois, de sorte que le hachage visuel ne corresponde pas exactement au vrai hachage, tout en restant reconnaissable à l'œil.
+
+>L'extension fonctionne automatiquement sur chaque site que vous visitez, et est disponible pour [Firefox][firefox] et [Chrome][chrome]. Essayez-la et dites-moi ce que vous en pensez.
+
+>Et, bien sûr, récupérez le [code source][source].
+
+[watchdog]: http://mozillalabs.com/blog/2011/12/watchdog-helping-users-manage-passwords-and-privacy/
+http://groups.google.com/group/mozilla-labs
+[manifeste]: http://www.mozilla.org/about/manifesto.fr.html
+[identity]: http://identity.mozilla.com/
+[browserid]: https://browserid.org/
+[paul]: http://www.paulsawaya.com/
+[addon]: https://wiki.mozilla.org/Identity/Watchdog/Visual_Hashing
+[hash]: http://connectioni.st/2011/12/visual-password-hashing-for-your.html
+[firefox]: https://addons.mozilla.org/en-US/firefox/addon/visual-hashing/
+[chrome]: https://chrome.google.com/webstore/detail/lkoelcpcjjehbjcchcbddggjmphfaiie
+[source]: https://github.com/mozilla/watchdog-visualhash
+[feedbacks]: http://groups.google.com/group/mozilla-labs
+[hated]: http://en.wikipedia.org/wiki/Office_Assistant
+[^trad]: merci [Adrian](http://adrian.gaudebert.fr/) pour la correction de mon contresens sur cette phrase;
+[^sel]: pour renforcer le chiffrement des mots de passe, les sites sérieux lui ajoutent un «&nbsp;grain de sel&nbsp;», de sorte que le même mot de passe chiffré par deux sites différents ne soit pas identique;

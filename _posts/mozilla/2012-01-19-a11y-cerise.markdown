@@ -1,0 +1,34 @@
+---
+  layout: post
+  title: "Accessibilité : farine ou cerise"
+  published: true
+  date: 2012-01-20 00:37:00
+  tags:
+  - Mozilla
+  - a11y
+---
+
+L'accessibilité est-elle une cerise que l'on dépose au sommet d'un gâteau pour le transformer en chef d'œuvre, ou la farine sans laquelle la recette ne prendra pas&nbsp;? Fait-elle partie des fondements de tout projet, auxquels il faut penser dès la première ligne de code du premier prototype, ou suffit-il pour rendre un logiciel accessible de «&nbsp;rajouter des attributs sur toutes les balises HTML&nbsp;»&nbsp;?
+
+Il n'y a sans doute pas de réponse universelle, valable pour tous les projets. Mais la question mérite je pense d'être posée à chaque fois que l'on envisage de se lancer dans une nouvelle aventure culinaire.
+
+Et elle se pose tout particulièrement pour ma boutique préférée, la Pâtisserie Mozilla. Les pâtissiers y sont plein d'idées et ne cessent d'inventer de nouvelles recettes de gâteaux. Bien sûr, on ne peut pas trouver la meilleure recette du premier coup, il faut faire des essais, les faire goûter aux clients, affiner les réglages. Dans ces gâteaux, l'accessibilité fait-elle partie des ingrédients de base, ou est-elle une décoration que l'on rajoutera comme une touche finale pour couronner l'œuvre ?
+
+J'aurais tendance à pencher pour la première réponse, l'accessibilité devrait être un des composants de base de toute recette sortant du fournil de Mozilla. C'est une boutique qui crée des gâteaux destinés au plus grand nombre, il ne me semble guère judicieux de ne pas permettre à certains clients de participer aux essais. Surtout, les pâtissiers sont animés par des valeurs, l'envie de permettre à tout le monde de déguster de bon gâteaux et d'en cuisiner soi-même. Ces valeurs ne sont pas que des arguments marketing imprimés sur l'emballage. Elles sont inscrites dans chacun des gâteaux qui sort du four, et devraient l'être dès les premiers essais. 
+
+Pourtant, j'ai remarqué que ce n'était pas toujours le cas. Que parfois, on créait une recette en se focalisant sur quelques points, mais en oubliant certains ingrédients de base, pour ne les rajouter que plus tard. En omettant de penser dès le début à l'accessibilité, ou du moins à celui de ses versants auquel je suis le plus sensible, pour être directement concerné, l'internationalisation[^ia]. Alors que Firefox est [le navigateur le plus accessible](http://www.html5accessibility.com/) et un de ceux disposant du plus de versions localisées[^local], certains récents projets ont dans un premier temps fait l'impasse sur la localisation.
+
+L'exemple le plus frappant est bien sûr Jetpack, le nouveau système d'extension, dont la première version stable est sortie, après une longue gestation, sans fournir de solution pour traduire les extensions. Cela devrait bientôt être réglé[^jetpack], mais je trouve cela assez choquant au regard de l'histoire de Mozilla et de sa tradition de versions localisées[^tradition]. Deux autres cas me viennent à l'esprit&nbsp;: BrowserID, en cours de déploiement sur certains sites de Mozilla, mais uniquement en version anglaise. Et Hackasaurus, dont une partie des outils —&nbsp;le kit expliquant comment organiser un atelier de bidouille&nbsp;— n'est pour l'instant pas traduisible. Dans les deux cas, des solutions sont en cours d'élaboration[^wip], mais je trouve dommage que les utilisateurs non anglophones n'aient pas pu pleinement participer aux phases de prototypage de produits.
+
+Il y a mille façons de faire un gâteau, mais je pense qu'à chaque fois, au moment de rassembler les ingrédients, il faudrait se demander si, dans cette recette, l'accessibilité sera de la farine ou juste une cerise posée au dessus.
+
+Et je vous prie de m'excuser pour l'acrobatique métaphore que j'ai essayée de filer, parlant d'un sujet que je ne connais absolument pas. Car si pour compiler un noyau il suffit de savoir cuisiner un gâteau, l'inverse n'est malheureusement pas vrai.
+
+**Crédits&nbsp;**: merci à [Anthony](http://hanblog.info/) et [Goofy](https://twitter.com/#!/Goofy_bz) qui m'ont inspiré ce billet.
+
+[^ia]: dans nos métiers, l'accessibilité vise à permettre à chacun et chacune, quelles que soient ses capacités physiques et mentales, d'utiliser et de comprendre les logiciels que nous développons. Offrir à l'utilisateur une version dans sa langue fait donc partie de l'accessibilité.
+[^local]: Firefox est disponible dans 83 langues, je ne retrouve plus les chiffres des autres navigateurs;
+[^jetpack]: en particulier, me soufflent les traducteurs d'extensions, grâce aux efforts de [ochameau](http://twitter.com/technobarje)
+[^tradition]: et nombre de Mozilliens ont mis un premier pied dans la communauté par le biais des traductions, c'est donc aussi un marqueur du caractère communautaire de Mozilla;
+[^wip]: vous pouvez suivre les progrès de la localisation de BrowserID via le [ticket 706572](https://bugzilla.mozilla.org/show_bug.cgi?id=706572) et participer à la conversion en POH du Kit de Bidouille via [un projet](https://github.com/stenington/hacktivity-kit) sur Github;
+*[POH]: Plain Old HTML

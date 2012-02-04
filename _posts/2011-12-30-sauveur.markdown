@@ -2,7 +2,7 @@
   layout: post
   title: Chacun cherche son Sauveur
   published: true
-  date: 2011-12-31 23:16:00
+  date: 2011-12-31 00:16:00
 ---
 
 La citation du jour est de la vacancière [danah boyd][danah]&nbsp;:
@@ -22,9 +22,9 @@ Toutes les histoires qui ont fait la une en 2011 tournaient autour des moyens de
 <footer><span property="author">[danah boyd][danah]</span> in <cite>[What mattered most in technology in 2011][mattered]</cite></footer>
 </section>
 
-Cela rejoint une réflexion que je me fais pratiquement tous les matin et voulais partager depuis longtemps. 
+Cela rejoint une réflexion que je me fais pratiquement tous les matins et voulais partager depuis longtemps. 
 
-Le désespoir est l’ennemi de la raison, à mesure qu’il s’installe je vois la déraison et l’obscurantisme grignoter de plus en plus. Tous les matins, sur le chemin du métro, je croise des Loubavitch qui emmènent leur enfants à l’école communautaire. Toutes les boulangères sont voilées. Et les Témoins de Jéhovah disputent inlassablement aux évangélistes (et aux distributeurs de prospectus publicitaires Bolloré) les meilleurs emplacement autour des bouches du métro. Lorsque que je ressors du tube dans un de ces quartiers d’affaire où pullulent les start-up qui me nourrissent, le poids de la religion est le même, seules les idoles changent. Ici on vénère Jobs ou les gourous de la Vallée de Silicone en sacrifiant des vies au mythe de la petite entreprise innovante qui va changer le monde.
+Le désespoir est l’ennemi de la raison, à mesure qu’il s’installe je vois la déraison et l’obscurantisme grignoter de plus en plus. Tous les matins, sur le chemin du métro, je croise des Loubavitch qui emmènent leur enfants à l’école communautaire. Toutes les boulangères sont voilées. Et les Témoins de Jéhovah disputent inlassablement aux évangélistes (et aux distributeurs de prospectus publicitaires Bolloré) les meilleurs emplacement autour des bouches du métro. Lorsque que je ressors du tube dans un de ces quartiers d’affaire où pullulent les start-up qui me nourrissent, le poids de la religion est le même, seules les idoles changent. Ici on vénère Jobs ou les gourous de la Vallée de Silicium en sacrifiant des vies au mythe de la petite entreprise innovante qui va changer le monde.
 
 Depuis le temps qu’on nous martèle que les utopies sont mortes, nous sommes de plus en plus nombreux à nous réfugier dans l’obscurantisme et l’attente qu’un Allah, Jéhovah, Jobs, O’Reilly ou autre vienne nous sauver. Et ce n’est pas près de changer, puisqu’une bonne partie de 2012, en fRance du moins, va être consacrée au choix de la couleur de la cravate de cet autre type de sauveur mythique qu’est le bon berger chargé de veiller à ce qu’on reste dans le chemin tracé par les agences de notation.
 

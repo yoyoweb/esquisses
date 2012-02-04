@@ -1,0 +1,14 @@
+---
+  layout: post
+  title: Inutile parasite forever
+  published: true
+  date: 2012-01-02 23:14:00
+---
+
+Rik a décidé de [devenir un moine-soldat](http://hanblog.info/blog/post/2012/01/2012-je-prends-le-controle)&nbsp;: plus d'alcool, des crudités, du sport, moins de Twitter et un article par jour. Cette dernière résolution m'interpelle, car elle est du genre de celles que j'aurais pu prendre, si je pratiquais encore cet exercice. Ce nouveau carnet m'a remis le pied à l'étrier, et il suffirait de peu pour que je devienne diariste, pondant une note par jour. Écrire une page par jour est d'ailleurs un bon exercice. Comme marcher quelques minutes. Mais si je faisais dix pompes tous les matins, en publier la vidéo aurait-il le moindre intérêt&nbsp;? Écrire est une chose, avoir des points de vue intéressants à partager en est une autre. Je parle pour moi, bien sûr, et non de Rik, dont je ne doute pas vu l'étendu de ses connaissances, qu'il trouvera des sujets pertinents à traiter tous les jours.
+
+Outre le manque d'intérêt de ce que je pourrais écrire, me dissuade surtout l'inutilité de la chose. À quoi bon écrire, cela ne sert à rien. Je vois passer chaque jour tant d'articles intelligents, passionnants, inspirants, tellement meilleurs que tout ce que je pourrais écrire, tant de textes qui pourraient contribuer à rendre le monde meilleur. Et pourtant le monde ne s'améliore pas. C'est jour après jour la même horreur, *ad nauseam*. J'écris pour me consoler, pour essayer de me racheter, me convaincre que je lutte un tout petit peu contre l'horreur ambiante. Mais ne suis pas dupe, tout cela est vain.
+
+À vrai dire, si je devais prendre une résolution pour les prochains jours, ça serait de me remettre à coder. Il y a si longtemps que je n'ai pas écrit la moindre ligne de code utile. Peut-être une ligne de code utile fait-elle plus avancer le monde que cent notes jetées à la mer. Peut-être. Heureusement, je ne prend plus de résolutions depuis longtemps. Car j'ai en ce moment bien plus de projets de partage de mes états d'âme que de code.
+
+Inutile parasite forever.

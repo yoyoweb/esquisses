@@ -2,16 +2,20 @@
   layout: post
   title: Le nouveau gestionnaire de profils de Firefox
   published: true
-  date: 2011-12-07 23:57:59
+  date: 2011-12-07 23:58:02
   tags:
   - Mozilla
 ---
 
 Que ce soit lorsqu'on développe des sites Web, ou juste pour surfer avec des réglages différents selon les sites, on peut avoir besoin d'exécuter simultanément plusieurs instances de Firefox, avec des configurations différentes. 
 
-Jusqu'à présent, on pouvait simplement le faire en rajoutant les options `-no-remote` et `-ProfileManager` au lancement du navigateur. La première indique que l'on veut lancer une nouvelle instance, et la seconde affiche au démarrage le gestionnaire de profils, qui permet de choisir sa configuration. Cette solution pourrait bientôt devenir obsolète avec l'arrivée, discrète, d'un nouveau gestionnaire de profils. C'est une application XUL autonome, qui offre quelques nouvelles fonctionnalités intéressantes. La suppression de l'interface de gestion de profils intégrée à Firefox est un débat qui dure depuis des années, [ici][bug] et [là][group] par exemple. Le but n'est pas tant de diminuer le temps de démarrage — l'impact lors de l'utilisation du profil par défaut est quasi nul — que d'externaliser un code ancien et complexe. La sortie du nouveau gestionnaire a été des plus discrètes, et personne ne semble plus travailler dessus actuellement. Ses nouvelles fonctionnalités méritent quant même d'être présentées.
+Jusqu'à présent, on pouvait simplement le faire en rajoutant les options `-no-remote` et `-ProfileManager` au lancement du navigateur. La première indique que l'on veut lancer une nouvelle instance, et la seconde affiche au démarrage le gestionnaire de profils, qui permet de choisir sa configuration. Cette solution pourrait bientôt devenir obsolète avec l'arrivée, discrète, d'un nouveau gestionnaire de profils. C'est une application XUL autonome, qui offre quelques nouvelles fonctionnalités intéressantes. La suppression de l'interface de gestion de profils intégrée à Firefox est un débat qui dure depuis des années, [ici][bug] et [là][group] par exemple. Le but n'est pas tant de diminuer le temps de démarrage — l'impact lors de l'utilisation du profil par défaut est quasi nul — que d'externaliser un code ancien et complexe. La sortie du nouveau gestionnaire a été des plus discrètes, et personne ne semble plus travailler dessus actuellement. Ses nouvelles fonctionnalités méritent quand même d'être présentées.
 
-Je voulais traduire la page qui lui est consacrée sur [MDN][mdn], mais j'ai vraiment trop de mal avec les éditeurs en ligne. Je livre donc ici un résumé traduit de cette documentation, libre à qui voudra s'en donner la peine de la reprendre ailleurs.
+La documentation sur MDN a été traduite deux heures après que j'ai fini ce billet, je vous y renvoie : [le gestionnaire de profils][mdnfr]
+
+[mdnfr]: https://developer.mozilla.org/fr/Profile_Manager
+
+Pour mémoire, ce que j'écrivais hier soir&nbsp;:
 
 ## Un peu de doc
 
@@ -63,4 +67,6 @@ J'ai testé ce nouveau gestionnaire, et le trouve bien pratique, malgré quelque
 [dl]: ftp://ftp.mozilla.org/pub/mozilla.org/utilities/profilemanager/1.0/
 [multiple]: https://bugzilla.mozilla.org/show_bug.cgi?id=598687
 [bugs]: https://bugzilla.mozilla.org/buglist.cgi?resolution=---&query_format=advanced&component=ProfileManager&product=Testing
+
+
 

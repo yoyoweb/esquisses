@@ -1,0 +1,23 @@
+---
+  layout: default
+  title: Learning, Freedon and the Web
+  published: true
+  date: 2011-12-24 00:00:06
+  tags:
+  - Mozilla
+  - Drumbeat
+  - Learning
+---
+
+*Voici un rapide résumé d'un article de Ben Moskowitz intitulé «&nbsp;[Learning, Freedom and the Web – read all about it!][post]&nbsp;»*
+
+En 2012, Mozilla va essayer de se développer dans l'éducation. L'éducation au Web, ses techniques et sa culture. L'éducation via le Web. Et l'éducation en utilisant les valeurs du Web. Plusieurs des projets qui ont muri cette année et ont amené la Fondation à s'intéresser à l'éducation, sont nés lors d'un week-end à Barcelone, lorsqu'en 2010 500 personnes se sont rassemblées pour le premier festival Mozilla. Pour que la mémoire de ce festival ne soit pas perdue, Ben, [Anya Kamenetz](http://diyubook.com/) et d'autres protagonistes ont travaillé ces derniers mois à en collecter le récit. Un livre en a été tiré, [consultable en ligne][site], que l'on peut également télécharger ou acheter au format papier. Il compile des entretiens avec des participants, des compte-rendus qu'ils ont rédigé, des touittes envoyés tout au long de l'évènement, des photos… Le code source de la version HTML est [distribué](https://github.com/benrito/lfwbooksite) sous licence CC-BY-SA pour permettre à chacun de le réutiliser à sa guise. 
+
+Le livre s'interroge sur l'apport des valeurs du logiciel et de la culture libres à l'éducation, aux moyens d'apprendre le Web, par le Web et avec lui, etc. C'est à la fois un nouveau manifeste où Mozilla essaie d'expliquer ses buts en matière d'éducation, et un guide pratique pour organiser des *hackfests*, jouer avec Popcorn.js, bidouiller avec Arduino…
+
+
+
+[post]: http://www.benmoskowitz.com/?p=447
+[site]: http://learningfreedomandtheweb.org/
+
+

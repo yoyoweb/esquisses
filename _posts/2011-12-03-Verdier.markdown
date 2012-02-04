@@ -1,0 +1,40 @@
+---
+  layout: post
+  title: Entre deux chaises
+  published: true
+  date: 2012-01-09 00:00:01
+  tags:
+  - hackuse
+  - QOTD
+---
+
+Une récente traduction sur le Framablog, traitant de la «&nbsp;Révolution Libre&nbsp;» en cours m'a rappelé que j'avais noté il y a un mois une autre citation à propos de révolution. Un brouillon de note qui n'allait nulle part et que, contrairement au principe de ce carnet, je n'avais pas publié. La voici.
+
+<section vocab="http://schema.org/" about="" typeof="Article">
+<blockquote cite="http://www.henriverdier.com/2011/11/eduquer-apres-la-revolution-numerique.html" property="articleBody">
+<div markdown="1">
+(…) à un premier capitalisme centré sur la production (celui de l'école de Ferry), privilégiant l'ingénieur, la propriété intellectuelle, la captation de la force physique des ouvriers, a succédé un second capitalisme articulé autour de la production de masse, la communication de masse et la consommation de masse, privilégiant le marketing et tentant de capter le désir des consommateurs. Nous sortons aujourd'hui péniblement de cette ère pour entrer dans un monde hyper-instruit, hyper-connecté et hyper-outillé, essayant de capter la créativité des consommateurs, et privilégiant donc le design des systèmes et des interfaces — 
+</div>
+</blockquote>
+<footer><span class="author vcard"><span property="dc:contributor" class="fn">[Henri Verdier][verdier]</span></span> in <cite>[Eduquer après la Révolution numérique][eduquer]</cite></footer>
+</section>
+
+Je n'ai pas la prétention de comprendre Stiegler ou Moulier Boutang, autres théoriciens de la mutation vers un capitalisme cognitif, et n'ai donc retenu que l'idée des trois phases, chacune symbolisée par leur cheville ouvrière&nbsp;: l'ouvrier, le commercial, le designer. Et en ai déduit que j'ai deux révolutions de retard&nbsp;: étant moi-même ouvrier[^ouvrier], je continue à analyser le monde comme si nous étions encore dans la première révolution industrielle. Celle de la production (de logiciels dans mon cas). Je ne m'intéresse qu'à la production et à ses conditions. Je cherche à manufacturer des objets logiciels en me concentrant sur leur conception et leurs fonctionnalités. À produire de beaux objets utiles.
+
+Je n'aime pas les commerciaux. Je m'en méfie. Les assimile à des voleurs, des escrocs, prêts à tout pour vendre aux gens des produits dont ils n'ont pas besoin, mentant sur le produit, imposant une diminution de la qualité pour réduire les coûts, etc. Je refuse de devenir commercial, d'entrer dans ce jeu pour diffuser auprès du plus grand nombre mes productions.
+
+Je me méfie des designers. Parce que je n'ai ni talent ni sensibilité pour le design, et ne comprend donc pas grand chose à leur métier. Parce que j'ai l'impression que le design est souvent synonyme de primauté de la forme sur le fond. Et que pour moi le fond doit primer. La beauté du code sur celle de l'interface. La richesse fonctionnelle. Le reste n'est que futilités.
+
+Je pense que parmi les gens gravitant dans le monde du logiciel libre, nous sommes nombreux à être restés bloqués au stade de la production, à refuser d'essayer de devenir des commerciaux et des designers. À préférer peaufiner méticuleusement un objet pour le rendre le plus utile possible, en estimant que son utilité seule suffira à le faire adopter par le plus grand nombre. À refuser de nous abaisser à faire du marketing pour «&nbsp;vendre&nbsp;» nos logiciels. À nous méfier des designers qui voudraient nous faire renoncer à certaines fonctionnalités au profit d'une interface prétendument plus ergonomique pour le commun des mortels. Je pense que ces deux trains de retard sont en partie responsables du manque de popularité de nos logiciels comparés à leurs équivalents privateurs. (oui, ce n'est pas un constat nouveau).
+
+Et pour reprendre une fois de plus un exemple qui me tient à cœur, celui de Mozilla, ces trois stades offrent peut-être une grille d'analyse permettant de comprendre certaines tensions. Entre une première génération, soucieuse uniquement de la qualité technique et des fonctionnalités des logiciels. Une deuxième génération, qui a aidé à diffuser le produit auprès du grand public en utilisant les techniques du marketing —&nbsp;souvent au grand dam des premiers, OMG, on utilise Facebook&nbsp;!&nbsp;— et la génération «&nbsp;Jobs&nbsp;», celle des designers, celle qui cherche à privilégier la créativité des utilisateurs en effaçant l'outil. Cet outil qui fait la fierté des ouvriers lesquels, du fond de leurs ateliers sombres, se sentent dépossédés une deuxième fois.
+
+Les délocalisations et la désindustrialisation consécutive ont effacé les ouvriers de notre imaginaire. Ils représentent pourtant encore près du quart de la population active, mais nous les avons oubliés, oubliées les petites mains qui fabriquent tous les objets de notre quotidien. Oubliées et dévalorisées. Au niveau des études comme de la position sociales, les voies les plus valorisées sont désormais celles qui forment des commerciaux, non des ingénieurs. Et le véritable culte autour de Jobs est sans doute précurseur de l'arrivée des designers en haut de la pyramide sociale. D'où le malaise de tous ceux qui produisent les richesses, agriculteurs et ouvriers de l'industrie mécanique, chimique ou logicielle.
+
+Finalement, les développeurs informatiques ont un peu le cul entre deux chaises. À la fois au cœur de la «&nbsp;Révolution numérique&nbsp;» en cours, et effacés au profit de ceux qui la vendent et en conçoivent l'emballage. Pas très confortable.
+
+[^ouvrier]: je considère les développeurs logiciels comme des ouvriers ou, s'ils sont à leur compte, des artisans. Le sens premier du mot est «&nbsp;travailleur, travailleuse qui exécute pour le compte d'autrui, moyennant salaire, un travail manuel&nbsp;» ([source][cnrtl]). Mon métier est de manipuler une machine pour créer un objet. L'aspect «&nbsp;intellectuel&nbsp;» de la chose étant équivalent à la réflexion nécessaire à tout ouvrier qualifié ou artisan pour réaliser sa tâche;
+[verdier]: http://fr.wikipedia.org/wiki/Henri_Verdier
+[eduquer]: http://www.henriverdier.com/2011/11/eduquer-apres-la-revolution-numerique.html
+[cnrtl]: http://www.cnrtl.fr/definition/ouvrier
+

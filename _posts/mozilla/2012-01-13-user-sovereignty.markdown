@@ -22,7 +22,7 @@ Voici déjà les deux articles, bonne lecture.
 [^webfwd]: ainsi par exemple d'[Open Photo](http://theopenphotoproject.org/), une alternative libre à Flickr ou de [Verese](http://verese.net/) qui gère des micro-paiements au sein d'une communauté;
 
 
-<section class="cite" vocab="http://schema.org/" about="http://blog.lizardwrangler.com/2012/01/13/user-sovereignty-for-our-data/" typeof="Article">
+<section class="cite" vocab="http://schema.org/" about="http://blog.lizardwrangler.com/2012/01/13/user-sovereignty-for-our-data/" typeof="Article">
 <header><cite>[User Sovereignty for our Data](http://blog.lizardwrangler.com/2012/01/13/user-sovereignty-for-our-data/)</cite> par <span class="author vcard"><span property="dc:contributor" class="fn">[Mitchell Baker](http://blog.lizardwrangler.com/)</span></span></header>
 <blockquote property="articleBody" cite="http://blog.lizardwrangler.com/2012/01/13/user-sovereignty-for-our-data/">
 <div markdown="1">

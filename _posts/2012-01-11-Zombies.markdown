@@ -1,0 +1,59 @@
+---
+  layout: post
+  title: Au revoir les zombies
+  published: true
+  date: 2012-01-12 00:02:00
+  tags:
+  - Mozilla
+---
+
+Firefox a souvent été qualifié d'ogre à mémoire (*bloatware*), et pas toujours à tort. En Mars 2011, Mozilla a donc lancé le projet **[MemShrink](https://wiki.mozilla.org/Performance/MemShrink)** pour s'attaquer au problème. Nicholas Nethercote, un des responsables, publie chaque semaine un [état d'avancement][progress]. Que l'on pourrait décrire comme des chroniques de la chasse aux (compartiments) zombies. J'avoue que c'était jusqu'à présent pour moi un rituel aussi mystérieux que la chasse au Dahu. Je viens juste de tomber sur [un article][zombie1], depuis synthétisé sous forme d'une [documentation dans MDN][zombie2] où il explique le concept. Je vais tenter de résumer ce que j'en ai compris, merci de me signaler mes erreurs.
+
+## À chaque origine son compartiment
+
+La mémoire utilisée par le moteur JavaScript de Firefox est divisée en compartiments. Tous les objets créés par une origine[^origine] sont stockés dans un compartiment. Pour d'évidentes raisons de sécurité, les objets d'un compartiment ne peuvent accéder qu'à des objets du même compartiment.
+
+Vous pouvez voir la liste de tous les compartiments à l'URL `about:memory?verbose`. Sous *Explicit Allocations* vous verrez le détail de l'ensemble des compartiments, tant ceux liés à une origine que ceux utilisés par Firefox lui-même. En sus des compartiments, cette vue affiche également la pile, la mémoire utilisée par le DOM de chaque onglet ouvert, par l'interface du navigateur et différentes autres informations. On peut ainsi facilement visualiser la mémoire utilisée par les scripts de chaque page (mais pas par chaque page, il faudrait additionner les scripts, le DOM, les images…)
+
+Il est important de faire la différence entre une origine et une page Web&nbsp;:
+- si vous avez plusieurs onglets ouverts sur des pages d'un même site, leurs scripts auront la même URL, donc seront dans le même compartiment;
+- il est fréquent qu'une page charge des scripts de diverses origines. Par exemple un ou plusieurs scripts de pistage des utilisateurs, des scripts de partage sur des réseaux «&nbsp;sociaux&nbsp;», etc… Cette page créera donc de nombreux compartiments. L'expérience est facile à faire&nbsp;: créez un profil temporaire, ouvrez-y par exemple un site d'actualité puis avec `about:memory?verbose` allez compter le nombre de compartiments créés. Facebook, Google, Twitter seront probablement du voyage[^name];
+
+Les compartiments ne sont pas supprimés dès la fermeture du dernier onglet utilisant un script d'une origine. La libération de la mémoire se fait de manière classique au moyen d'un ramasse-miette appelé à intervalles réguliers. Les compartiments survivent donc quelques secondes aux scripts qui les ont créés.
+
+## Les zombies attaquent
+
+Parfois, certains compartiments ne sont pas supprimés après la fermeture des onglets qui les utilisaient. Ils continuent donc à occuper inutilement de la mémoire, et la mémoire globale utilisée par le navigateur croit à mesure que se multiplient ces zombies. Une bonne partie du travail de *Memshrink* est donc d'identifier les causes entraînant la création de tels zombies. 
+
+### Chasser les zombies
+
+Le meilleur moyen de participer à la chasse est de regarder régulièrement l'état de la mémoire. Si vous voyez un compartiment associé à une URL qui ne semble plus utilisée par aucun onglet ouvert, ça pourrait être un zombie. Pour en avoir le cœur net, redémarrez Firefox en n'ouvrant que la page que vous pensez à l'origine de ce compartiment, ouvrez le gestionnaire de mémoire pour vérifier que le compartiment est présent. Fermez alors la page et forcez l'appel du ramasse-miette au moyen du bouton `minimize memory usage` de `about:memory`. Si après avoir appuyé plusieurs fois sur le bouton et attendu quelques minutes, le compartiment est toujours là, vous êtes probablement en présence d'un zombie. Il faut alors créer un ticket détaillant le problème (je vous renvoie à l'article sur MDN pour les détails de la création du ticket).
+
+Beaucoup de progrès ont été faits ces derniers mois pour éradiquer les zombies. Memshrink s'attaque à présent à un nouveau gros chantier&nbsp;: les zombies enfantés par des extensions. Pour les aider, nous pouvez, lorsque vous détectez un zombie, essayer de voir s'il est lié à une de vos extensions en répétant les manœuvres ci-dessus en désactivant les unes après les autres chacune de vos extensions.
+
+## Bonus
+
+Quelques nouvelles extraites du [dernier point][last] d'avancement de Memshrink&nbsp;:
+- Jared Wein a corrigé une fuite qui survenait en regardant une vidéo HTML5 tout en ayant installé une extension utilisant certaines fonctionnalités du navigateur. Parmi les extensions impactées&nbsp;: Adblock Plus, GreaseMonkey et NoScript. Soit un paquet d'utilisateurs;
+- Arantius a corrigé des fuites liées à GreaseMonkey;
+- l'équipe travaillant sur JetPack a réduit significativement l'utilisation mémoire des extensions crées avec le SDK;
+- Krzysztof Kotlenga a corrigé un bug qui permettait à WebGL de consommer plus d'1Go de mémoire sur GNU/Linux avec l'accélération matérielle activée;
+
+La consommation mémoire de Firefox s'améliore semaine après semaine. Si vous aviez délaissé le petit panda parce que vous le trouviez trop gourmand, n'hésitez pas à tester de temps en temps les *nightlies* pour voir les progrès réalisés. 
+
+## Références
+
+- la page de documentation sur les [compartiments zombies][zombie2];
+- Andreas Gal a écrit un article très détaillé sur la [gestion de la mémoire](http://andreasgal.com/2010/10/13/compartments/) par le moteur JavaScript de Firefox (article un peu vieux, je ne sais pas s'il est encore entièrement exact);
+
+## Moralité
+
+Je viens enfin de comprendre le sens de la fameuse chanson «&nbsp;what's in your heap ? Zombies…&nbsp;»
+
+[^origine]: deux pages ont la même origine si leurs URLs ont le même protocole, le même port et le même hôte. Cf [cette explication sur MDN](https://developer.mozilla.org/en/Same_origin_policy_for_JavaScript).
+[^name]: à noter un petit bug qui n'aide pas à s'y retrouver&nbsp;: le nom du compartiment est l'URL de la première page ouverte sur une origine, non cette origine. Vous aurez donc parfois des compartiments nommés par l'URL d'une page que vous avez fermée. Ce n'est pas forcément une erreur, mais signifie que d'autres scripts de la même origine sont encore actifs;
+
+[progress]: http://blog.mozilla.com/nnethercote/category/memshrink/
+[zombie1]: http://blog.mozilla.com/nnethercote/2011/07/20/zombie-compartments-recognize-and-report-them-stop-the-screaming/
+[zombie2]: https://developer.mozilla.org/en/Zombie_compartments
+[last]: http://blog.mozilla.com/nnethercote/2012/01/11/memshrink-progress-week-30/

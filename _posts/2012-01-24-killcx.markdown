@@ -1,0 +1,25 @@
+---
+  layout: post
+  title: Débloquer une socket
+  published: true
+  date: 2012-01-24 21:22:00
+---
+
+Il arrive de temps en temps qu'un de mes logiciels gèle en attendant une opération d'entrée-sortie. C'est le cas par exemple de Mutt qui se bloque parfois lorsque la connexion à un serveur distant est victime d'un problème réseau. J'ai trouvé un moyen de reprendre la main sans tuer le programme, mais il est très laborieux. Je serais curieux de découvrir des méthodes plus propres d'arriver au même résultat.
+
+Pour l'instant, lorsque mon Mutt cesse de réagir, voici ce que je fais&nbsp;:
+- je lance *htop*, cherche le processus et tape `s` pour tracer les appels système du processus (alternative&nbsp;: chercher le numéro du processus et utiliser `strace -s pid`);
+- si le programme est bien bloqué sur une lecture de *socket*, je vois quelque chose comme `recv(4,`&nbsp;: le processus attend des données du fichier dont le descripteur est 4;
+- je vais faire un tour dans `/proc` pour récupérer la chaussette correspondant au descripteur&nbsp;: `ls -l /proc/pid/fd/4` devrait afficher quelque chose comme `4 -> socket:[12345]`;
+- reste à fermer proprement cette *socket*, en espérant que le processus reprendra alors une activité normale. J'utilise pour cela un petit script perl bien pratique, [killcx](http://killcx.sourceforge.net/);
+- `killcx` a besoin des adresses et des ports d'origine de la connexion. Que l'on peut obtenir par exemple avec `netstat`[^netstat]&nbsp;: 
+        netstat -taupeevn | grep 12345
+        tcp        0      0 192.168.0.1:40968        192.168.0.2:993      ESTABLISHED 1000       12345      42/mutt
+- on ferme&nbsp;: `killcx 192.168.0.1:40968 192.168.0.2:993`;
+
+Quand j'ai de la chance, mutt affiche un message d'erreur indiquant qu'il a perdu une connexion, et me rend la main. Sinon, il *segfault*.
+
+Des idées pour faire la même chose plus proprement&nbsp;?
+
+[netstat]: il parait que c'est une commande dépréciée, et qu'il faudrait utiliser `ss` à la place. Mais je suis vieux, j'utilise des commandes de vieux;
+
