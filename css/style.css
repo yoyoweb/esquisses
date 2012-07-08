@@ -70,23 +70,93 @@ a {
 /*-----------
  * Page layout
  *-----------*/
+@media screen and (max-width: 240px) {
+  body {
+    width: 220px;
+    margin: 15px auto;
+  }
+  #main {
+    width: 200px;
+  }
+  #header {
+    height: auto;
+  }
+  #header h1 {
+    margin: 10px 0;
+  }
+  #header p {
+    display: none;
+  }
+}
+@media screen and (min-width: 241px) and (max-width: 320px) {
+  body {
+    width: 220px;
+    margin: 15px auto;
+  }
+  #main {
+    width: 200px;
+  }
+  #header p {
+    display: none;
+  }
+  #header {
+    height: auto;
+  }
+  #header h1 {
+    margin: 10px 0;
+  }
+  #header p {
+    display: none;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+    width: 300px;
+  }
+  #main {
+    width: 260px;
+  }
+  #header p {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 { font-size: 3em; }
+  h2 { font-size: 2em; }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 460px;
+  }
+  #main {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    width: 44em;
+    margin-top: 50px;
+  }
+  #main {
+    width: 33em;
+  }
+  #header {
+    height: 200px;
+  }
+}
 body {
-  width: 44em;
-  margin: 50px auto;
   -moz-hyphens: auto;
   hyphens: auto;
   color: #CCC;
   text-shadow: 2px 2px 2px #000;
-}
-#header {
-  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #header p {
   font-style: italic;
   font-size: .875em;
 }
 #main {
-  width: 33em;
   margin: auto;
   text-align: left;
 }
