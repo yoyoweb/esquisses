@@ -1,0 +1,24 @@
+---
+  layout: post
+  title: Les gens ne lisent pas de flux XML
+  published: true
+  date: 2012-03-09 23:30:00
+  tags:
+  - Mozilla
+---
+
+Les gens ne lisent pas de flux XML. Ce sont les machines qui lisent des flux XML. Les gens eux lisent leur courrier.
+
+Il y a 15 ans, lorsqu'on tombait sur un site intéressant, il n'était pas compliqué d'être informé de ses mises à jours. Il suffisait de laisser son adresse de courrier électronique, on s'abonnait à une lettre d'information et on recevait les mises à jour dans sa boîte aux lettres. Puis, sans doute à cause de l'augmentation du nombre de pourriels, les utilisateurs les plus avertis ont commencé à rechigner à laisser leur adresse n'importe où, et à chercher d'autres moyens d'être avertis des mises à jour.
+
+À la même époque naissait RSS. Dans mon souvenir, c'était d'abord un moyen d'échanger des informations entre sites, d'indiquer sur un site les publications des sites amis. Donc un moyen d'échange entre machines. Je ne me souviens plus trop à partir de quand on s'est dit que ça serait un bon moyen de remplacer les newsletters. Puisque les sites mettaient à la disposition des autres sites des flux XML, pourquoi ne pas nous aussi utiliser ces flux. Et nous sommes devenus accrocs à RSS et ATOM, compagnons indispensables de l'aventure des blogs. 
+
+En 2011, Mozilla a provoqué un coup de tonnerre en supprimant de l'interface par défaut de Firefox le bouton indiquant qu'un flux était disponible et permettant de s'y abonner. Comme beaucoup d'autres geeks, j'ai crié à la trahison. Comment promouvoir ce format d'échange qu'est ATOM si les utilisateurs n'ont aucun moyen de connaître son existence&nbsp;?
+
+La vieillesse aidant, je me dis aujourd'hui que cette décision de Mozilla était la bonne. Ce bouton ne promouvait pas RSS/ATOM. Même si un utilisateur, découvrant cette icône étrange au milieu d'autres aussi peu compréhensibles, avait la curiosité de cliquer dessus, que pouvait-il faire ensuite&nbsp;? Il arrivait sur un écran présentant de manière spartiate les derniers articles et lui proposant d'ajouter le site à son lecteur de flux. Un «&nbsp;lecteur de flux&nbsp;»&nbsp;? WTF se serait dit monsieur Michu —&nbsp;enfin l'équivalent en Michu, fichtre, palsembleu ou skoastruk&nbsp;— et il serait retourné regarder des vidéos de chat. Intérêt pédagogique nul. Ce bouton était donc bien inutile, n'offrant à la majorité des utilisateurs ni un service utile, ni l'opportunité de découvrir un nouvel usage. Quant aux utilisateurs de flux, ils n'ont pas été lésés, car ils ont pour la plupart le niveau de compétences pour refaire apparaître le bouton chéri.
+
+Et j'en reviens à mon hypothèse initiale. Les gens ne lisent pas de flux RSS, mais ils lisent leurs mails. Il faudrait donc trouver un moyen de fournir un service équivalent aux lettres d'informations, mais sans les problèmes liés à la diffusion de son adresse électronique aux sites. Il faudrait en fait que le navigateur gère tout cela de façon transparente. Et, ça tombe bien, une des évolutions en cours de Firefox permet d'aller dans cette direction, avec BrowserID et le chantier sur la gestion de l'identité. Firefox sait lire des flux XML. Firefox connait notre adresse. Pourquoi ne pas lui demander de créer lui-même des lettres d'information à partir des flux. En arrivant sur un site proposant un flux, on aurait non l'icône orange, mais une enveloppe proposant de recevoir les nouveautés par mail. Cliquer dessus dirait à Firefox de s'abonner au flux et de nous envoyer un mail à chaque mise à jour. Et on pourrait consulter les dernières nouvelles de ses sites préférés directement dans son client de messagerie habituel.
+
+Techniquement, cela ne me semble guère compliqué à réaliser, une extension pourrait probablement faire le boulot dès aujourd'hui. La seule difficulté que je vois est de se connecter à un SMTP pour l'envoi des mails. Mais je me rappelle que Mozilla fut jadis une suite complète intégrant un courrielleur, ils devrait donc bien rester quelques développeurs capables de résoudre ce souci.
+
+Cela ne signifie bien sûr pas la mort d'ATOM. Il a je pense encore un bel avenir comme protocole de communication et format d'échange entre machines. Mais il est temps que les navigateurs proposent aux utilisateurs d'autres moyens de recevoir des nouvelles des sites. Alors qui a cinq minutes pour coder cette extension&nbsp;?

@@ -1,0 +1,17 @@
+---
+  layout: post
+  title: Gemmes, pipes, poires, et les autres
+  published: true
+  date: 2012-05-21 23:24:00
+  tags:
+---
+
+J'ai récemment [gazouillé](https://twitter.com/#!/clochix/status/203492756788740096) qu'après avoir jeté un œil à [Zurb Foundation](http://foundation.zurb.com/) (une structure permettant de créer des sites Web réactifs), je n'allais probablement pas l'essayer, car les développeurs [indiquent](https://github.com/zurb/foundation/issues/370) qu'ils vont utiliser de plus en plus Ruby. Une dépendance certes facultative, mais qui deviendra sans doute nécessaire pour tirer le meilleur parti de l'outil. Or j'essaie de me libérer de ma dépendance à Ruby. Mon gazouillis a suscité quelques réponses, et comme je suis un bavard qui a du mal à dire quoi que ce soit en cent quarante octets, je vais développer ici un brin.
+
+*C'était plus simple avant*. Il y a une dizaine d'années, trois technologies serveur étaient prédominantes sur le Web : PHP, Java et .Net. Chacune avait sa philosophie et sa pile de composants. On était d'un camp et on utilisait les outils de ce camp. J'étais développeur PHP et avais donc installé sur mon serveur tous les outils pour exécuter des applications PHP, les bibliothèques, les gestionnaires de paquets, les modules Apache, tout le nécessaire pour compiler des modules, etc.
+
+Aujourd'hui, j'ai l'impression que le secteur est beaucoup plus fragmenté. De nouveaux environnements se sont imposés, ou sont en train de le faire. Python, Ruby, JavaScript via Node.js. Avant, si l'on excluait les technologies propriétaires et/ou obèses, on n'avait guère d'autre choix que des applications en PHP. Aujourd'hui, pour quasiment chaque application, on peut choisir entre des solutions en PHP, Python, Ruby, JavaScript (bientôt). Ce choix est une bonne chose, mais avec son mauvais côté : chaque technologie a sa propre pile de composants, bibliothèques, gestionnaire de paquets, serveur applicatif recommandé, etc. Et l'on se retrouve à installer et gérer des paquets PEAR/PECL pour PHP, des PIP pour Python, des Gems pour Ruby, des Npm pour Node… Des dépendances pas forcément empaquetées pour ma distribution (ou dont les paquets ne sont pas à jour), et qu'il faut donc gérer à la main. Se battre avec les gestionnaires de paquets aux options incompatibles. Régler les conflits, vérifier régulièrement les mises à jour de sécurité. Ce qui était hier routinier pour mon langage de prédilection représente, s'il faut le faire pour quatre environnements différents, tant une charge de travail non négligeable qu'un risque du fait de mon amateurisme.
+
+Pour diminuer la charge de maintenance de mon serveur, et minimiser les risques d'avoir des composants présentant des failles de sécurité connues, j'essaie donc désormais de limiter ma dépendance à des composants que je ne maîtrise pas. À moyen terme, je voudrais ne conserver que JavaScript (parce que c'est mon langage de choix pour les prochaines années) et Python (parce qu'il est très lié à Debian, et que je peux donc difficilement envisager de m'en passer). Il va falloir que je trouve des alternatives aux applications PHP (mon instance de Status.net va dégager) et Ruby (je vais essayer de remplacer Jekyll par DocPad pour ce journal) que j'utilise encore.
+
+Je n'ai donc rien contre Ruby, ni même PHP. Chacun de ces environnements est aujourd'hui mature et offre tous les outils qu'il faut. Mais désormais dans mes choix de composants et d'applications, la dépendance à certaines piles technologiques sera un critère important.
