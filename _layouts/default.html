@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr" >
-  <head>
+  <head prefix="doap: http://usefulinc.com/ns/doap#">
     <title>{{ page.title }}</title>
     <meta charset="utf-8" />
     <meta name="description" content="Esquisses, brouillons et notes en vrac d'un apprenti geek intéressé par la liberté" />
     <meta name="author" content="Clochix" />
+    <meta property="doap:bug-database" content="https://github.com/clochix/esquisses/issues">
     <link rel="alternate" type="application/atom+xml" title="Flux des billets" href="/atom.xml" />
     <link rel="alternate" type="application/atom+xml" title="Flux des mises à jour" href="https://github.com/clochix/esquisses/commits/gh-pages.atom" />
     <link rel="stylesheet" href="/css/style.css" media="screen" />
     <link rel="stylesheet" href="/css/print.css" media="print" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href="http://esquisses.clochix.net">
   </head>
   <body
       xmlns="http://www.w3.org/1999/xhtml"
@@ -21,21 +24,11 @@
               gn:   http://www.geonames.org/ontology#
               og:   http://opengraphprotocol.org/schema/
               rdfs: http://www.w3.org/2000/01/rdf-schema#
-              cc:   http://creativecommons.org/ns#
               "
     >
-      <!--
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:dcterms="http://purl.org/dc/terms/"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-      xmlns:gn="http://www.geonames.org/ontology#"
-      xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      -->
     <header id="header">
     <h1><a href="/">Esquisses…</a></h1>
-    <p>Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté. Cet espace, contenant et contenu, est mouvant, en cours de création et changera je l'espère d'un jour à l'autre. Les billets ne sont que des brouillons en cours de rédaction.</p>
+    <p class="baseline">Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté. Cet espace, contenant et contenu, est mouvant, en cours de création et changera je l'espère d'un jour à l'autre. Les billets ne sont que des brouillons en cours de rédaction.</p>
     </header>
     <section id="main">
       {{ content }}
@@ -47,7 +40,15 @@
         <li rel="dc:rights"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dct: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL">Clochix</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dct: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dct:source">esquisses.clochix.net</a>.</li>
         <li>Gribouillé sous <a href="http://www.vim.org">Vim</a>, publié par <a href="http://jekyllrb.com/">Jekyll</a>, hébergé sur une <a href="http://www.debian.org">Debian</a> par <a href="http://www.gandi.net/">Gandi</a> et partagé sur <a href="https://github.com/clochix/esquisses/tree/gh-pages">Github</a>, pour exercer mon geekisme.</li>
       </ul>
+      <!-- Bugtracker -->
+      <div vocab="http://usefulinc.com/ns/doap#" typeof="Project" itemscope itemtype="http://usefulinc.com/ns/doap#Project">
+        <a property="bug-database" itemprop="bug-database" href="https://github.com/clochix/esquisses/issues">Signaler un problème</a>
+      </div>
     </footer>
+
+    <!-- Github's Ribbon -->
+    <a href="https://github.com/clochix/esquisses"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
     <div id="headBlur" class="blurMargin"></div>
     <div id="footBlur" class="blurMargin"></div>
   </body>
