@@ -3,16 +3,55 @@ layout: default
 title: Carnet d'esquisse de Clochix
 ---
 
-{% for post in site.posts limit:10 %}
+{% for post in paginator.posts %}
   <article about="{{ site.url }}{{ post.url }}" class="hentry">
     <h1><a href="{{ site.url }}{{ post.url }}" property="dc:title">{{ post.title }}</a></h1>
     <div class="entry-summary">
       {{ post.content }}
     </div>
     <aside class="seemore">
-      <a href="{{ site.url }}{{ post.url }}">Lire la note </a>
+      <a href="{{ site.url }}{{ post.url }}">Lire « {{ post.title }} »</a>
       — publié le <time property="dc:created published">{{ post.date | date: "%d %b %Y" }}</time>, 
     </aside>
   </article>
 {% endfor %}
 
+
+<div id="post-pagination" class="pagination">
+  {% if paginator.previous_page %}
+  <p class="previous">
+    {% if paginator.previous_page == 1 %}
+    <a href="/">Accueil</a>
+    {% else %}
+    <a href="/page{{paginator.previous_page}}">Page précédente</a>
+    {% endif %}
+  </p>
+  {% endif %}
+
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+    <li class="page">
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.next_page %}
+  <p class="next">
+    <a href="/page{{paginator.next_page}}">Page suivante</a>
+  </p>
+  {% endif %}
+
+</div>
