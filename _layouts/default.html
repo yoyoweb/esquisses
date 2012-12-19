@@ -5,6 +5,15 @@
     <meta charset="utf-8" />
     <meta name="description" content="Esquisses, brouillons et notes en vrac d'un apprenti geek intéressé par la liberté" />
     <meta name="author" content="Clochix" />
+    <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+    <meta name="dc.creator"   content="Clochix" />
+    <meta name="dc.date"      content="{{ page.date }}" />
+    <meta name="dc.format"    content="text/html" />
+    <meta name="dc.language"  content="fr" />
+    <meta name="dc.publisher" content="Clochix" />
+    <meta name="dc.rights"    content="http://creativecommons.org/licenses/by-sa/3.0/" scheme="URL"  />
+    <meta name="dc.title"     content="{{ page.title }}" />
+    <meta name="dc.type"      content="Text" />
     <meta property="doap:bug-database" content="https://github.com/clochix/esquisses/issues">
     <link rel="alternate" type="application/atom+xml" title="Flux des billets" href="/atom.xml" />
     <link rel="alternate" type="application/atom+xml" title="Flux des mises à jour" href="https://github.com/clochix/esquisses/commits/gh-pages.atom" />
@@ -12,7 +21,10 @@
     <link rel="stylesheet" href="/css/print.css" media="print" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="canonical" href="http://esquisses.clochix.net">
+    <link rel="canonical" href="http://esquisses.clochix.net{{ page.url }}" />
+    <!-- shame on me, I'm trying to improve snippet in Google search results -->
+    <link rel="author" href="https://plus.google.com/110363776137964187973" />
+    <link rel="publisher" href="https://plus.google.com/110363776137964187973" />
   </head>
   <body
       xmlns="http://www.w3.org/1999/xhtml"

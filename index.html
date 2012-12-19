@@ -5,13 +5,13 @@ title: Carnet d'esquisse de Clochix
 
 {% for post in paginator.posts %}
   <article about="{{ site.url }}{{ post.url }}" class="hentry">
-    <h1><a href="{{ site.url }}{{ post.url }}" property="dc:title">{{ post.title }}</a></h1>
+    <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title">{{ post.title }}</a></h1>
     <div class="entry-summary">
       {{ post.content }}
     </div>
     <aside class="seemore">
       <a href="{{ site.url }}{{ post.url }}">Lire « {{ post.title }} »</a>
-      — publié le <time property="dc:created published">{{ post.date | date: "%d %b %Y" }}</time>, 
+      — publié le <time property="dc:created published" class="updated">{{ post.date | date: "%d %b %Y" }}</time>, par <span class="vcard"><a href="http://clochix/net" class="url fn">Clochix</a></span>
     </aside>
   </article>
 {% endfor %}

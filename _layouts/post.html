@@ -2,8 +2,8 @@
 layout: default
 ---
 
-  <article about="{{ site.url }}{{ page.url }}" class="hentry">
-    <h1 property="dc:title">{{ page.title }}</h1> 
+  <article about="{{ site.url }}{{ page.url }}" class="hentry" itemscope itemtype="http://schema.org/Article">
+    <h1 property="dc:title" class="entry-title" itemprop="name">{{ page.title }}</h1> 
     {{ content }}
     <footer>
       <ul class="taglist">
@@ -12,9 +12,9 @@ layout: default
         {% endfor %}
       </ul>
       <p class="meta">Publié le 
-      <time property="dc:created" class="published">{{ page.date | date: "%d %b %Y" }}</time> par 
-      <span class="author" property="dc:contributor">{% include author.html %}</span> / 
-      <span property="dc:identifier"><a href="{{ site.url }}{{ page.url }}" rel="bookmark">lien permanent</a></span>
+      <time property="dc:created" class="published updated">{{ page.date | date: "%d %b %Y" }}</time> par 
+      <span class="author" property="dc:contributor" itemprop="author">{% include author.html %}</span> / 
+      <span property="dc:identifier"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" itemprop="url">lien permanent</a></span>
       </p>
       <p>Pour réagir, n'hésitez-pas à m'écrire&nbsp;: clochix chez clochix.net</p>
     </footer>
