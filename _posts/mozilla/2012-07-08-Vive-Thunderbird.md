@@ -2,7 +2,7 @@
   layout: post
   title: Vive Thunderbird !
   published: true
-  date: 
+  date: 2012-07-08 22:00:00
   tags:
   - Mozilla
   - Thunderbird
