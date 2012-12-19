@@ -1,15 +1,16 @@
 safe:        false
-auto:        false
+auto:        true
 server:      false
 server_port: 4000
-baseurl:    /esquisses/
+baseurl:     esquisses.clochix.net 
+paginate:    10
 
 source:      .
 destination: ./_site
 plugins:     ./_plugins
 
 future:      true
-lsi:         true
+lsi:         false
 pygments:    false
 markdown:    maruku
 permalink:   pretty
