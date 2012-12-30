@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr"
+      xmlns="http://www.w3.org/1999/xhtml"
+      prefix="cc:   http://creativecommons.org/ns#
+              dc:   http://purl.org/dc/elements/1.1/
+              dct:  http://purl.org/dc/terms/
+              foaf: http://xmlns.com/foaf/0.1/
+              geo:  http://www.w3.org/2003/01/geo/wgs84_pos#
+              gn:   http://www.geonames.org/ontology#
+              og:   http://opengraphprotocol.org/schema/
+              rdfs: http://www.w3.org/2000/01/rdf-schema#
+              "
+              >
   <head prefix="doap: http://usefulinc.com/ns/doap#">
     <title>{{ page.title }}</title>
     <meta charset="utf-8" />
@@ -25,43 +36,67 @@
     <!-- shame on me, I'm trying to improve snippet in Google search results -->
     <link rel="author" href="https://plus.google.com/110363776137964187973" />
     <link rel="publisher" href="https://plus.google.com/110363776137964187973" />
+    <script type="text/javascript">
+function createCookie(name, value, days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else var expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+    </script>
   </head>
-  <body
-      xmlns="http://www.w3.org/1999/xhtml"
-      prefix="cc:   http://creativecommons.org/ns#
-              dc:   http://purl.org/dc/elements/1.1/
-              dct:  http://purl.org/dc/terms/
-              foaf: http://xmlns.com/foaf/0.1/
-              geo:  http://www.w3.org/2003/01/geo/wgs84_pos#
-              gn:   http://www.geonames.org/ontology#
-              og:   http://opengraphprotocol.org/schema/
-              rdfs: http://www.w3.org/2000/01/rdf-schema#
-              "
-    >
-    <header id="header">
-    <h1><a href="/">Esquisses…</a></h1>
-    <p class="baseline">Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté. Cet espace, contenant et contenu, est mouvant, en cours de création et changera je l'espère d'un jour à l'autre. Les billets ne sont que des brouillons en cours de rédaction.</p>
-    </header>
-    <section id="main">
-      {{ content }}
-    </section>
-    <nav>
-    </nav>
-    <footer id="footer">
-      <ul>
-        <li rel="dc:rights"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dct: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL">Clochix</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dct: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dct:source">esquisses.clochix.net</a>.</li>
-        <li>Gribouillé sous <a href="http://www.vim.org">Vim</a>, publié par <a href="http://jekyllrb.com/">Jekyll</a>, hébergé sur une <a href="http://www.debian.org">Debian</a> par <a href="http://www.gandi.net/">Gandi</a> et partagé sur <a href="https://github.com/clochix/esquisses/tree/gh-pages">Github</a>, pour exercer mon geekisme.</li>
-      </ul>
-      <!-- Bugtracker -->
-      <div vocab="http://usefulinc.com/ns/doap#" typeof="Project" itemscope itemtype="http://usefulinc.com/ns/doap#Project">
-        <a property="bug-database" itemprop="bug-database" href="https://github.com/clochix/esquisses/issues">Signaler un problème</a>
+  <body>
+    <script type="text/javascript">
+      if (readCookie('theme') === 'light') {
+        document.body.classList.add("light");
+      }
+    </script>
+    <div id="dark" class="theme"><div id="light" class="theme"><div id="geek" class="theme">
+      <div id="body">
+        <header id="header">
+        <h1><a href="/">Esquisses…</a></h1>
+        <p class="baseline">Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté. Cet espace, contenant et contenu, est mouvant, en cours de création et changera je l'espère d'un jour à l'autre. Les billets ne sont que des brouillons en cours de rédaction.</p>
+        </header>
+        <section id="main">
+          {{ content }}
+        </section>
+        <nav>
+        </nav>
+        <footer id="footer">
+          <ul>
+            <li rel="dc:rights"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dct: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL">Clochix</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dct: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dct:source">esquisses.clochix.net</a>.</li>
+            <li>Gribouillé sous <a href="http://www.vim.org">Vim</a>, publié par <a href="http://jekyllrb.com/">Jekyll</a>, hébergé sur une <a href="http://www.debian.org">Debian</a> par <a href="http://www.gandi.net/">Gandi</a> et partagé sur <a href="https://github.com/clochix/esquisses/tree/gh-pages">Github</a>, pour exercer mon geekisme.</li>
+          <!-- Bugtracker -->
+          <li vocab="http://usefulinc.com/ns/doap#" typeof="Project" itemscope itemtype="http://usefulinc.com/ns/doap#Project">
+            <a property="bug-database" itemprop="bug-database" href="https://github.com/clochix/esquisses/issues">Signaler un problème</a>
+          </li>
+            <li>
+              <!-- Thème -->
+              <a href="#light" onclick="createCookie('theme', 'light'); document.body.classList.add('light');">Thème clair et mieux contrasté</a>
+              <a href="#" onclick="createCookie('theme', 'dark'); document.body.classList.remove('light');">Thème sombre</a>
+            </li>
+          </ul>
+        </footer>
+
+        <!-- Github's Ribbon -->
+        <a href="https://github.com/clochix/esquisses"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+        <div id="headBlur" class="blurMargin"></div>
+        <div id="footBlur" class="blurMargin"></div>
       </div>
-    </footer>
-
-    <!-- Github's Ribbon -->
-    <a href="https://github.com/clochix/esquisses"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
-    <div id="headBlur" class="blurMargin"></div>
-    <div id="footBlur" class="blurMargin"></div>
+    </div></div></div>
   </body>
 </html>

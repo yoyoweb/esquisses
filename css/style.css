@@ -17,6 +17,10 @@ body {
   font-size: 1em;
   line-height: 1.4em;
   font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  color: #CCC;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'RieslingRegular', serif;
@@ -55,6 +59,13 @@ q { font-style: italic}
 q:before {content: "« ";}
 q:after {content: " »";}
 tt { display: block; margin: 1.5em 0; line-height: 1.5; }
+.theme {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+}
 /*-
  *
  *-*/
@@ -71,7 +82,7 @@ a {
  * Page layout
  *-----------*/
 @media screen and (max-width: 240px) {
-  body {
+  #body {
     width: 220px;
     margin: 15px auto;
   }
@@ -89,7 +100,7 @@ a {
   }
 }
 @media screen and (min-width: 241px) and (max-width: 320px) {
-  body {
+  #body {
     width: 220px;
     margin: 15px auto;
   }
@@ -110,7 +121,7 @@ a {
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  body {
+  #body {
     width: 300px;
   }
   #main {
@@ -125,7 +136,7 @@ a {
   h2 { font-size: 2em; }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  body {
+  #body {
     width: 460px;
   }
   #main {
@@ -133,9 +144,9 @@ a {
   }
 }
 @media screen and (min-width: 769px) {
-  body {
+  #body {
     width: 44em;
-    margin-top: 50px;
+    padding-top: 50px;
   }
   #main {
     width: 33em;
@@ -144,13 +155,35 @@ a {
     height: 200px;
   }
 }
-body {
+#body {
   -moz-hyphens: auto;
   hyphens: auto;
-  color: #CCC;
   text-shadow: 2px 2px 2px #000;
   margin-left: auto;
   margin-right: auto;
+}
+.theme {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+}
+#light:target, body.light {
+  background: #DDD;
+  /* source http://subtlepatterns.com/cardboard */
+  background: url("cardboard.png") repeat scroll 0 0 black;
+  color: #080808;
+}
+#light:target #body, body.light #body {
+  text-shadow: none !important;
+}
+#light:target a, body.light a {
+  color: #333;
+}
+#light:target h1, #light:target h1 a,
+body.light h1, body.light h1 a {
+  color: #A00;
 }
 #header p {
   font-style: italic;
@@ -162,6 +195,17 @@ body {
 }
 #main article.hentry {
   margin: 0 auto 20em auto;
+}
+#light:target #main article.hentry,
+body.light #main article.hentry {
+  padding: 15px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  background: #F8F8F8;
+}
+#light:target #main article.hentry,
+body.light #main article.hentry {
+  background: #F8F8F8;
 }
 #main article li {
   margin-bottom: 1.5em;
@@ -218,6 +262,10 @@ div.blurMargin {
   position: fixed;
   padding: 0px;
   pointer-events: none;
+}
+#light:target div.blurMargin,
+body.light div.blurMargin {
+  display: none;
 }
 /*
 #headBlur:hover, #footBlur:hover {
