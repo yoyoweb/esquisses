@@ -2,20 +2,38 @@
 layout: default
 ---
 
-  <article about="{{ site.url }}{{ page.url }}" class="hentry" itemscope itemtype="http://schema.org/Article">
-    <h1 property="dc:title" class="entry-title" itemprop="name">{{ page.title }}</h1> 
-    {{ content }}
+  <article
+    class="hentry"
+    about="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+    resource="{{ site.url }}{{ page.url }}" vocab="http://schema.org/" typeof="BlogPosting">
+    <h1 property="dc:title schema:name" class="entry-title" itemprop="name">{{ page.title }}</h1> 
+    <div property="schema:articleBody" itemprop="articleBody">
+      {{ content }}
+    </div>
     <footer>
       <ul class="taglist">
         {% for tag in page.tags %}
-        <li><a rel="tag">{{tag}}</a></li>
+        <li><a rel="tag" property="schema:keywords" itemprop="keywords">{{tag}}</a> </li>
         {% endfor %}
       </ul>
       <p class="meta">Publié le 
-      <time property="dc:created" class="published updated">{{ page.date | date: "%d %b %Y" }}</time> par 
-      <span class="author" property="dc:contributor" itemprop="author">{% include author.html %}</span> / 
-      <span property="dc:identifier"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" itemprop="url">lien permanent</a></span>
+      <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ page.date | date: "%d %b %Y" }}</time> par 
+      <span>{% include author.html %}</span> / 
+      <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" property="dc:identifier schema:url" itemprop="url">lien permanent</a></span>
       </p>
       <p>Pour réagir, n'hésitez-pas à m'écrire&nbsp;: clochix chez clochix.net</p>
     </footer>
   </article>
+  <div id="page-navigation">
+    <span class="left">
+      {% if page.previous.url %}
+      <a rel="previous" href="{{page.previous.url}}" title="Esquisses précédente : {{page.previous.title}}">{{page.previous.title}}</a>
+      {% endif %}
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+    <div class="right">
+      {% if page.next.url %}
+      <a rel="next" href="{{page.next.url}}" title="Esquisse suivante : {{page.next.title}}">{{page.next.title}}</a>
+      {% endif %}
+    </div>
+  </div> 

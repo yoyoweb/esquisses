@@ -54,7 +54,15 @@ strong { font-weight: bold; }
 em, dfn { font-style: italic;}
 dfn { font-weight: bold; }
 pre, code { margin: 1.5em 0; white-space: pre; }
-pre, code, tt { font: 1em monospace; line-height: 1.5; }
+pre, code, tt { font: 1em monospace; }
+pre {
+  padding: 10px;
+  line-height: 1.5;
+  overflow: auto;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #CCC;
+}
 q { font-style: italic}
 q:before {content: "« ";}
 q:after {content: " »";}
@@ -149,7 +157,7 @@ a {
     padding-top: 50px;
   }
   #main {
-    width: 33em;
+    width: 35em;
   }
   #header {
     height: 200px;
@@ -195,11 +203,14 @@ body.light h1, body.light h1 a {
 }
 #main article.hentry {
   margin: 0 auto 20em auto;
+  padding: 1em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 #light:target #main article.hentry,
 body.light #main article.hentry {
-  padding: 15px;
-  border: 1px solid #CCC;
+  border-color: #CCC;
   border-radius: 5px;
   background: #F8F8F8;
 }

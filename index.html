@@ -5,13 +5,17 @@ title: Carnet d'esquisse de Clochix
 
 {% for post in paginator.posts %}
   <article about="{{ site.url }}{{ post.url }}" class="hentry">
-    <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title">{{ post.title }}</a></h1>
-    <div class="entry-summary">
+  <article
+    class="hentry"
+    about="{{ site.url }}{{ post.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+    resource="{{ site.url }}{{ post.url }}" vocab="http://schema.org/" typeof="BlogPosting">
+  <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title schema:name" {% if forloop.first %}rel="start" title="Dernier billet"{% endif %}>{{ post.title }}</a></h1>
+    <div class="entry-summary" property="schema:articleBody" itemprop="articleBody">
       {{ post.content }}
     </div>
     <aside class="seemore">
       <a href="{{ site.url }}{{ post.url }}">Lire « {{ post.title }} »</a>
-      — publié le <time property="dc:created published" class="updated">{{ post.date | date: "%d %b %Y" }}</time>, par <span class="vcard"><a href="http://clochix/net" class="url fn">Clochix</a></span>
+      — publié le <time  property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ post.date | date: "%d %b %Y" }}</time>, par <span class="vcard"><a href="http://clochix/net" class="url fn" property="dc:creator schema:author" itemprop="author">Clochix</a></span>. Étiquetté {% for tag in post.tags %}<a property="schema:keywords" itemprop="keywords">{{tag}}</a>{% endfor %}
     </aside>
   </article>
 {% endfor %}
