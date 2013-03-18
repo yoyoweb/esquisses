@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr"
       xmlns="http://www.w3.org/1999/xhtml"
-      prefix="cc:     http://creativecommons.org/ns#
-              dc:     http://purl.org/dc/elements/1.1/
-              dct:    http://purl.org/dc/terms/
-              foaf:   http://xmlns.com/foaf/0.1/
-              geo:    http://www.w3.org/2003/01/geo/wgs84_pos#
-              gn:     http://www.geonames.org/ontology#
-              og:     http://opengraphprotocol.org/schema/
-              rdfs:   http://www.w3.org/2000/01/rdf-schema#
-              schema: http://schema.org/
+      prefix="cc:      http://creativecommons.org/ns#
+              dc:      http://purl.org/dc/elements/1.1/
+              dcterms: http://purl.org/dc/terms/
+              foaf:    http://xmlns.com/foaf/0.1/
+              geo:     http://www.w3.org/2003/01/geo/wgs84_pos#
+              gn:      http://www.geonames.org/ontology#
+              og:      http://opengraphprotocol.org/schema/
+              rdfs:    http://www.w3.org/2000/01/rdf-schema#
+              schema:  http://schema.org/
               "
               >
   <head prefix="doap: http://usefulinc.com/ns/doap#">
@@ -18,7 +18,7 @@
     <meta name="description" content="Esquisses, brouillons et notes en vrac d'un apprenti geek intéressé par la liberté" />
     <meta name="author" content="Clochix" />
     <link rel="schema.dc"  href="http://purl.org/dc/elements/1.1/" />
-    <link rel="schema.dct" href="http://purl.org/dc/terms" />
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms" />
     <meta name="dc.creator"   content="Clochix" />
     <meta name="dc.date"      content="{{ page.date }}" />
     <meta name="dc.format"    content="text/html" />
@@ -41,6 +41,18 @@
     {% endif %}
     {% if page.next.url %}
     <link rel="next" href="{{page.next.url}}" title="Esquisse suivante : {{page.next.title}}" />
+    {% endif %}
+    {% if page.references %}
+      {% for ref in page.references %}
+      <meta name="dcterms:references" content="{{ ref.url }}" />
+      <link rel="dcterms:references" content="{{ ref.url }}" title="{{  ref.title  }}" />
+      {% endfor %}
+    {% endif %}
+    {% if page.isReferencedBy %}
+      {% for ref in page.isReferencedBy %}
+      <meta name="dcterms:isReferencedBy" content="{{ ref.url }}" />
+      <link rel="dcterms:isReferencedBy" content="{{ ref.url }}" title="{{  ref.title  }}" />
+      {% endfor %}
     {% endif %}
     <!-- shame on me, I'm trying to improve snippet in Google search results
     <link rel="author" href="https://plus.google.com/110363776137964187973" />
@@ -90,7 +102,7 @@ function readCookie(name) {
         </nav>
         <footer id="footer">
           <ul>
-            <li><a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dct: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL me">Clochix</a> est mis à disposition selon les termes de la <a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dct: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dct:source">esquisses.clochix.net</a>.</li>
+            <li><a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dcterms: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dcterms:title" rel="dcterms:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL me">Clochix</a> est mis à disposition selon les termes de la <a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dcterms: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dcterms:source">esquisses.clochix.net</a>.</li>
             <li>Gribouillé sous <a href="http://www.vim.org">Vim</a>, publié par <a href="http://jekyllrb.com/">Jekyll</a>, hébergé sur une <a href="http://www.debian.org">Debian</a> par <a href="http://www.gandi.net/">Gandi</a> et partagé sur <a href="https://github.com/clochix/esquisses/tree/gh-pages">Github</a>, pour exercer mon geekisme.</li>
           <!-- Bugtracker -->
           <li vocab="http://usefulinc.com/ns/doap#" typeof="Project" itemscope itemtype="http://usefulinc.com/ns/doap#Project">

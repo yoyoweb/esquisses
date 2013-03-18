@@ -22,6 +22,24 @@ layout: default
       <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" property="dc:identifier schema:url" itemprop="url">lien permanent</a></span>
       </p>
       <p>Pour réagir, n'hésitez-pas à m'écrire&nbsp;: clochix chez clochix.net</p>
+      <div id="page-references">
+        {% if page.references %}
+        <p>Cette esquisse a notamment été inspirée par :</p>
+        <ul>
+          {% for ref in page.references %}
+          <li><a rel="dcterms:references" href="{{ ref.url }}" title="{{  ref.title  }}">{{ ref.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if page.isReferencedBy %}
+        <p>Cette esquisse a été citée par :</p>
+        <ul>
+          {% for ref in page.isReferencedBy %}
+          <li><a rel="dcterms:isReferencedBy" href="{{ ref.url }}" title="{{  ref.title  }}">{{ ref.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
     </footer>
   </article>
   <div id="page-navigation">
