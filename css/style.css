@@ -24,9 +24,10 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'RieslingRegular', serif;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1em;
   text-align: left;
+  letter-spacing: 0.1em;
   -moz-hyphens: none;
   hyphens: none;
 }

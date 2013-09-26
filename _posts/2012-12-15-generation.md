@@ -3,6 +3,15 @@
   title: Génération
   published: true
   date: 2012-12-14 21:21:21
+  isReferencedBy:
+    - url: http://neokraft.net/2012/12/18/renoncements
+      title: Renoncements
+    - url: http://neokraft.net/2012/12/30/web-perdu
+      title: Web perdu
+    - url: http://www.quaternum.net/2013/01/03/une-etape/
+      title: Une étape
+    - url: http://sam7blog42.fr/dossiers/avons-nous-perdu-le-web-que-nous-aimions/
+      title: Avons-nous perdu le Web que nous aimions
   tags:
   - Webmaker
 ---
