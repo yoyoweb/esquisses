@@ -110,11 +110,11 @@ a {
 }
 @media screen and (min-width: 241px) and (max-width: 320px) {
   #body {
-    width: 220px;
+    width: 100%;
     margin: 15px auto;
   }
   #main {
-    width: 200px;
+    width: 100%;
   }
   #header p {
     display: none;
@@ -224,7 +224,7 @@ body.light #main article.hentry {
 }
 #main article footer {
   margin: 3em;
-  font-size: 71%;
+  font-size: 87.5%;
 }
 #main article footer ul.taglist {
   list-style: none;
@@ -244,7 +244,7 @@ body.light #main article.hentry {
 }
 #footer {
   margin: 10em auto;
-  font-size: 71%;
+  font-size: 87.5%;
 }
 #footer ul {
   list-style-type: none;

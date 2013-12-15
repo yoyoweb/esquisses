@@ -2,7 +2,7 @@
   layout: post
   title: Monsieur Madame empreinte digitale numérique
   published: true
-  date: 2013-09-17 23:18:12
+  date: 2013-09-17 23:18:13
   tags:
   - privacy
 ---
@@ -39,7 +39,10 @@ Quelqu’un a cinq minutes pour coder une petite preuve du concept, un générat
  - Sébastien Sauvage m’a indiqué [VizHash GD](https://github.com/sebsauvage/VizHash), qui crée des hashs graphiques. Le [wiki du projet](http://sebsauvage.net/wiki/doku.php?id=php:vizhash_gd) liste d’autres initiatives similaires ;
  - [Kevin Gaudin](https://plus.google.com/105599514712357912650/posts) m’a fait découvrir le projet [MonsterID](http://www.splitbrain.org/projects/monsterid), qui crée un hash sous forme de petit monstre. Kevin en a réalisé une [implémentation en JavaScript](http://kevingaudin.github.io/monsterid.js/). On se rapproche ici beaucoup plus de ce que j’ai en tête.
 
-*Note sur l’article* : une des points intéressants de l’article de Justus Ranvier est qu’il définit l’identité en fonction d’interactions sociales plutôt que d’un bout de plastique délivré par une administration. Malheureusement dans sa proposition finale de réseau social de certification d’identité, il utilise pour ce faire des composants qui pour moi ne font pas forcément partie de l’identité, comme la date de naissance, l’adresse de résidence, etc. Clochix est l’auteur de ce carnet, de réflexions de bistro sur Twitter et de quelques dépôts sur Github. C’est tout. Il n’a ni date de naissance hormis celle d’enregistrement du domaine, ni adresse, hormis l’IP de ce serveur. Ou du moins, la date de naissance et la résidence des doigts qui tapent sur le clavier ne font pas partie de l’identité "Clochix". Et je me demande comment la garantir, certifier que je suis bien Clochix, puisque la quasi totalité des composants de cette identité sont publics, donc aisément usurpables. La gestion de l’identité de ses hétéronymes n’est pas résolue.
+\[Ajout du 2 octobre :\]
+ - Sébastien Fievet [me signale](https://twitter.com/zyegfryed/status/385298908379090944) le projet [hashmoji](https://github.com/mcroydon/hashmoji) « a simple Python 3 program and library for visualizing content hashes as emoji ».
+
+*Note sur l’article* : un des points intéressants de l’article de Justus Ranvier est qu’il définit l’identité en fonction d’interactions sociales plutôt que d’un bout de plastique délivré par une administration. Malheureusement dans sa proposition finale de réseau social de certification d’identité, il utilise pour ce faire des composants qui pour moi ne font pas forcément partie de l’identité, comme la date de naissance, l’adresse de résidence, etc. Clochix est l’auteur de ce carnet, de réflexions de bistro sur Twitter et de quelques dépôts sur Github. C’est tout. Il n’a ni date de naissance hormis celle d’enregistrement du domaine, ni adresse, hormis l’IP de ce serveur. Ou du moins, la date de naissance et la résidence des doigts qui tapent sur le clavier ne font pas partie de l’identité "Clochix". Et je me demande comment la garantir, certifier que je suis bien Clochix, puisque la quasi totalité des composants de cette identité sont publics, donc aisément usurpables. La gestion de l’identité de ses hétéronymes n’est pas résolue.
 
 PS : l’idée de représentation graphique d’une empreinte n’est évidemment pas nouvelle. Wikipedia date l’invention des [identicones](http://en.wikipedia.org/wiki/Identicon) de 2007, j’ai trouvé un article de 2009 évoquant la conversion de l’empreinte en [code de couleurs](http://blog.bentobako.org/index.php?post/2009/02/02/A-visual-way-to-check-fingerprints) et il existe un outil, [Visprint](http://www.tastyrabbit.net/visprint/) qui crée une fractale à partir d’une empreinte. Quant au site [http://robohash.org/](), il propose de transformer n’importe quel texte en robot.
 
