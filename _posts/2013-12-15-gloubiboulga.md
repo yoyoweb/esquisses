@@ -2,7 +2,14 @@
   layout: post
   title: Gloubiboulga et serveur
   published: true
-  date: 2014-12-15 21:21:21
+  date: 2013-12-15 21:21:21
+  updated: 2013-12-18 22:00:00
+  references:
+  - url: https://larlet.fr/david/blog/2013/outils-conviviaux/
+    title: Outils conviviaux
+  isReferencedBy:
+  - url: http://longtermlaziness.wordpress.com/2013/12/16/sans-serveur/
+    title: Sans serveur
 ---
 
 C’était cette après-midi. Je faisais la vaisselle, cherchant une excuse pour retourner devant le clavier. C’est alors que m’est venue cette Révélation, que je me suis empressé d’aller gazouiller : « Je me suis trompé sur le Web. J’aime HTTP, mais ça reste un protocole client-serveur, donc fondamentalement centralisateur. Toute solution impliquant d’installer un serveur est réservée à une élite, donc ne peut être émancipatrice. Il nous faut remettre l’intelligence à la marge, dans les mains des gens, dans leurs ordiphones plutôt que sur des serveurs, fussent-ils Web. » Plusieurs d’entre vous ayant eu la gentillesse de répondre, je vais développer un peu plus le contexte. 
