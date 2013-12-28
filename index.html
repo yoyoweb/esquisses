@@ -2,19 +2,29 @@
 layout: default
 title: Carnet d'esquisse de Clochix
 ---
-
 {% for post in paginator.posts %}
   <article
     class="hentry"
-    about="{{ site.url }}{{ post.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+    about="{{ site.url }}{{ post.url }}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"
     resource="{{ site.url }}{{ post.url }}" vocab="http://schema.org/" typeof="BlogPosting">
-  <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title schema:name" {% if forloop.first %}rel="start" title="Dernier billet"{% endif %}>{{ post.title }}</a></h1>
+  <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title schema:name" {% if forloop.first %}rel="start" title="Dernier billet"{% endif %} itemprop="name">{{ post.title }}</a></h1>
     <div class="entry-summary" property="schema:articleBody" itemprop="articleBody">
       {{ post.content }}
     </div>
     <aside class="seemore">
       <a href="{{ site.url }}{{ post.url }}">Lire « {{ post.title }} »</a>
-      — publié le <time  property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ post.date | date: "%d %b %Y" }}</time>, par <span class="vcard"><a href="http://clochix/net" class="url fn" property="dc:creator schema:author" itemprop="author">Clochix</a></span>. Étiquetté {% for tag in post.tags %}<a property="schema:keywords" itemprop="keywords">{{tag}}</a>{% endfor %}
+      — publié le
+      {% if post.updated %}
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
+        et mis à jour le
+        <time property="dc:modified schema:dateModified" itemprop="dateModified" class="updated">{{ post.updated | date: "%d %b %Y à %H:%M" }}</time> 
+      {% else %}
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
+      {% endif %}
+      par <span class="vcard"><a href="http://clochix.net" class="url fn" property="dc:creator schema:author" itemprop="author">Clochix</a></span>.
+      {% if post.tags %}
+      Étiquetté {% for tag in post.tags %}<a property="schema:keywords" itemprop="keywords">{{tag}}</a>{% endfor %}
+      {% endif %}
     </aside>
   </article>
 {% endfor %}
@@ -26,7 +36,7 @@ title: Carnet d'esquisse de Clochix
     {% if paginator.previous_page == 1 %}
     <a href="/">Accueil</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}">Page précédente</a>
+    <a rel="prev" href="/page{{paginator.previous_page}}">Page précédente</a>
     {% endif %}
   </p>
   {% endif %}
@@ -34,7 +44,7 @@ title: Carnet d'esquisse de Clochix
   <ul class="pages">
     <li class="page">
       {% if paginator.page == 1 %}
-      <span class="current-page">1</span>
+      <span rel="canonical" class="current-page">1</span>
       {% else %}
       <a href="/">1</a>
       {% endif %}
@@ -43,7 +53,7 @@ title: Carnet d'esquisse de Clochix
     {% for count in (2..paginator.total_pages) %}
     <li class="page">
       {% if count == paginator.page %}
-      <span class="current-page">{{count}}</span>
+      <span rel="canonical" class="current-page">{{count}}</span>
       {% else %}
       <a href="/page{{count}}">{{count}}</a>
       {% endif %}
@@ -53,7 +63,7 @@ title: Carnet d'esquisse de Clochix
 
   {% if paginator.next_page %}
   <p class="next">
-    <a href="/page{{paginator.next_page}}">Page suivante</a>
+    <a rel="next" href="/page{{paginator.next_page}}">Page suivante</a>
   </p>
   {% endif %}
 

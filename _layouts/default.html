@@ -82,8 +82,8 @@ function readCookie(name) {
     </script>
   </head>
   <body
-    about="{{ site.url }}" itemscope itemtype="http://schema.org/BlogPostings"
-    resource="{{ site.url }}" vocab="http://schema.org/" typeof="BlogPostings"
+    about="{{ site.url }}" itemscope itemtype="http://schema.org/Blog"
+    resource="{{ site.url }}" vocab="http://schema.org/" typeof="Blog"
     >
     <script type="text/javascript">
       if (readCookie('theme') === 'light') {
@@ -93,7 +93,7 @@ function readCookie(name) {
     <div id="dark" class="theme"><div id="light" class="theme"><div id="geek" class="theme">
       <div id="body">
         <header id="header">
-        <h1><a href="/">Esquisses…</a></h1>
+        <h1 itemprop="name"><a itemprop="url" href="/">Esquisses…</a></h1>
         <p class="baseline">Esquisses, brouillons, notes et autres traces d'un apprenti geek intéressé par la liberté. Cet espace, contenant et contenu, est mouvant, en cours de création et changera je l'espère d'un jour à l'autre. Les billets ne sont que des brouillons en cours de rédaction.</p>
         </header>
         <section id="main">
@@ -103,7 +103,7 @@ function readCookie(name) {
         </nav>
         <footer id="footer">
           <ul>
-            <li><a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dcterms: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dcterms:title" rel="dcterms:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL me">Clochix</a> est mis à disposition selon les termes de la <a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dcterms: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dcterms:source">esquisses.clochix.net</a>.</li>
+            <li><a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span prefix="dcterms: http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dcterms:title" rel="dcterms:type">Esquisses</span> de <a prefix="cc: http://creativecommons.org/ns#" href="http://clochix.net" property="cc:attributionName" rel="cc:attributionURL me" itemprop="author">Clochix</a> est mis à disposition selon les termes de la <a rel="dc:rights license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transcrit</a>. Source: <a prefix="dcterms: http://purl.org/dc/terms/" href="http://esquisses.clochix.net" rel="dcterms:source">esquisses.clochix.net</a>.</li>
             <li>Gribouillé sous <a href="http://www.vim.org">Vim</a>, publié par <a href="http://jekyllrb.com/">Jekyll</a>, hébergé sur une <a href="http://www.debian.org">Debian</a> par <a href="http://www.gandi.net/">Gandi</a> et partagé sur <a href="https://github.com/clochix/esquisses/tree/gh-pages">Github</a>, pour exercer mon geekisme.</li>
           <!-- Bugtracker -->
           <li vocab="http://usefulinc.com/ns/doap#" typeof="Project" itemscope itemtype="http://usefulinc.com/ns/doap#Project">
