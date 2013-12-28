@@ -11,7 +11,7 @@
 Lu dans [CQFD](http://www.cequilfautdetruire.org), cet extrait :
 
 <section vocab="http://schema.org/" typeof="Book" class="cite">
-<blockquote property="text" cite="http://books.google.fr/books?id=-TzrS6h3Q8YC&pg=PT229&lpg=PT229&ots=2uBuhzYtYP">
+<blockquote property="text">
 <div markdown="1">
 (…) la formule du groupe Sex Pistols « Don't know what I want, but I know how to get it » (…) résume parfaitement la posture de l'humanité moderne qui, à défaut de savoir ce qu'elle veut, se consacre sans répit à la multiplication et au perfectionnement des moyens dont elle dispose (en ce sens, les scientifiques et les ingénieurs seraient des punks nihilistes).(…)
 </div>

@@ -2,7 +2,7 @@
   layout: post
   title: L'écrivaillon qui rêvait de cathédrales
   published: true
-  date: 21.01.2013 21:50:00
+  date: 2013-01-21 21:50:00
   tags:
   - Web Sémantique
   - Romantisme

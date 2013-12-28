@@ -2,9 +2,6 @@
   layout: post
   title: Mozilla et les créateurs de Web
   published: false
-  date: 
-  tags:
-  - Mozilla
 ---
 
 La vidéo : http://lacantine.ubicast.eu/videos/17-06-2012-130834/
