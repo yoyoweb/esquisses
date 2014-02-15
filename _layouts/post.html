@@ -7,7 +7,7 @@ layout: default
     about="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
     resource="{{ site.url }}{{ page.url }}" vocab="http://schema.org/" typeof="BlogPosting">
     <h1 property="dc:title schema:name" class="entry-title" itemprop="name">{{ page.title }}</h1> 
-    <div property="schema:articleBody" itemprop="articleBody">
+    <div property="schema:articleBody" itemprop="articleBody" class="entry-content">
       {{ content }}
     </div>
     <footer>
@@ -18,14 +18,14 @@ layout: default
       </ul>
       <p class="meta">Publié le 
       {% if page.updated %}
-        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published">{{ page.date | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published" datetime="{{page.date}}">{{ page.date | date: "%d %b %Y à %H:%M" }}</time> 
         et mis à jour le
-        <time property="dc:modified schema:dateModified" itemprop="dateModified" class="updated">{{ page.updated | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:modified schema:dateModified" itemprop="dateModified" class="updated" datetime="{{page.updated}}">{{ page.updated | date: "%d %b %Y à %H:%M" }}</time> 
       {% else %}
-        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ page.date | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated" datetime="{{page.date}}">{{ page.date | date: "%d %b %Y à %H:%M" }}</time> 
       {% endif %}
       par <span>{% include author.html %}</span> / 
-      <span><a href="{{ site.url }}{{ page.url }}" rel="canonical bookmark" property="dc:identifier schema:url" itemprop="url">lien permanent</a></span>
+      <span><a href="{{ site.url }}{{ page.url }}" rel="canonical bookmark" property="dc:identifier schema:url" itemprop="url" class="bookmark">lien permanent</a></span>
       </p>
       <p>Pour réagir, n'hésitez-pas à m'écrire&nbsp;: clochix chez clochix.net</p>
       <p>Si vous avez un compte Github, vous pouvez me proposer des corrections en <a href="https://github.com/clochix/esquisses/edit/gh-pages/{{ page.path }}" target="_blank">éditant ce billet</p>

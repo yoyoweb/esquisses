@@ -7,19 +7,19 @@ title: Carnet d'esquisse de Clochix
     class="hentry"
     about="{{ site.url }}{{ post.url }}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"
     resource="{{ site.url }}{{ post.url }}" vocab="http://schema.org/" typeof="BlogPosting">
-  <h1><a href="{{ site.url }}{{ post.url }}" class="entry-title" property="dc:title schema:name" {% if forloop.first %}rel="start" title="Dernier billet"{% endif %} itemprop="name">{{ post.title }}</a></h1>
-    <div class="entry-summary" property="schema:articleBody" itemprop="articleBody">
+    <h1><a href="{{ site.url }}{{ post.url }}"><span class="entry-title" property="dc:title schema:name" {% if forloop.first %}rel="start" title="Dernier billet"{% endif %} itemprop="name">{{ post.title }}</span></a></h1>
+    <div class="entry-content" property="schema:articleBody" itemprop="articleBody">
       {{ post.content }}
     </div>
     <aside class="seemore">
-      <a href="{{ site.url }}{{ post.url }}">Lire « {{ post.title }} »</a>
+      <a href="{{ site.url }}{{ post.url }}" class="bookmark">Lire « {{ post.title }} »</a>
       — publié le
       {% if post.updated %}
-        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published" datetime="{{post.date}}">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
         et mis à jour le
-        <time property="dc:modified schema:dateModified" itemprop="dateModified" class="updated">{{ post.updated | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:modified schema:dateModified" itemprop="dateModified" class="updated" datetime="{{post.updated}}">{{ post.updated | date: "%d %b %Y à %H:%M" }}</time> 
       {% else %}
-        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
+        <time property="dc:created schema:dateCreated" itemprop="dateCreated" class="published updated" datetime="{{post.date}}">{{ post.date | date: "%d %b %Y à %H:%M" }}</time> 
       {% endif %}
       par <span class="vcard"><a href="http://clochix.net" class="url fn" property="dc:creator schema:author" itemprop="author">Clochix</a></span>.
       {% if post.tags %}
