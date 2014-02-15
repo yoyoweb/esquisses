@@ -32,5 +32,5 @@ HTTP est un protocole merveilleux, mais encore trop lié à une logique client-s
 
 Heureusement, Internet ne se limite pas au Web, et on a vu il y a quelques années des réseaux très grands publics et fortement décentralisés se mettre en place, à l’époque de la vogue du P2P. Le rêve d’un Internet a-centré n’est donc sans doute pas mort, mais peut-être à chercher ailleurs que sur le Web. À moins que nous soyons capables de repenser, d’inventer, un Web de pairs à pairs.
 
-Accessoirement, peut-être que nombre de nos contemporains n’ont pas envie d’être autonomes mais se sentent parfaitement bien dans les jardins privatifs totalement sécurisés, aseptisés, confortables. Et qu’avec nos histoires de serveurs-à-la-maison nous ne cherchons pas à répondre à un besoin mais à promouvoir notre vision de ce qui serait bon pour l’humanité collectée.
+Accessoirement, peut-être que nombre de nos contemporains n’ont pas envie d’être autonomes mais se sentent parfaitement bien dans les jardins privatifs totalement sécurisés, aseptisés, confortables. Et qu’avec nos histoires de serveurs-à-la-maison nous ne cherchons pas à répondre à un besoin mais à promouvoir notre vision de ce qui serait bon pour l’humanité connectée.
 
